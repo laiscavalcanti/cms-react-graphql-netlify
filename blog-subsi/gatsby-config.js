@@ -5,13 +5,23 @@ module.exports = {
     description: `Um blog sobre literatura, línguas, educação e diários`,
     author: `@laiscavalcanti`,
   },
+    
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Playfair Display']
+        },
       },
     },
     `gatsby-transformer-sharp`,

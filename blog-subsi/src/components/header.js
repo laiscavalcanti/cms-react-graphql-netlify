@@ -1,35 +1,35 @@
-import { Link } from "gatsby"
+/**import { Link } from "gatsby"  <Link>{siteTitle}
+</Link>*/
 import React from "react"
 import ImageHeader from "./ImageHeader"
+import * as S from './Layout/styled'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      /*marginBottom: `1.45rem`,*/
-    }}
-  >
-    <div
-      style={{
-        /*margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,*/
-      }}
-    >
-      <h1 /*style={{ margin: 0 }}*/>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <>
+  <header>
+    <div>
+      <h1><ImageHeader /></h1>
     </div>
-    <ImageHeader />
   </header>
-
+  <S.LayoutNav>
+    <S.LayoutLogo>
+      <div><a href="/home">Logo</a></div>
+    </S.LayoutLogo>
+    <div>
+      <nav>
+        <ul>
+          <S.LayoutA >
+          <a href="/"> Subsidiário </a>
+          <a href="/"> Home Scholling </a>
+          <a href="/"> Escritos </a>
+          <a href="/"> Cursos </a>
+          <a href="/about"> Sobre </a>
+          </S.LayoutA>
+        </ul>
+      </nav>
+    </div>
+    </S.LayoutNav>  
+  </>
 )
 
 

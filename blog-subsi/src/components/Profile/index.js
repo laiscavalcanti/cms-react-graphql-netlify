@@ -18,9 +18,7 @@ const Profile = () => {
       }
     `) 
     return (
-        <div className="Profile-wrapper" style={{
-            background: `violet`
-            }}>
+        <div>
              <h1>{title}</h1>
              <h2>{position}</h2>
              <p>{description}</p>
