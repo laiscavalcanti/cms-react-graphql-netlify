@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import * as S from './styled'
 
 const ImageHeader = () => {
     const { avatarImage } = useStaticQuery(
@@ -17,7 +17,7 @@ const ImageHeader = () => {
         }
     `
     )
-    return <Img fluid={avatarImage.childImageSharp.fluid} />
+    return <S.ImgWrapperHeader fluid={avatarImage.childImageSharp.fluid} />
 } 
 
 export default ImageHeader

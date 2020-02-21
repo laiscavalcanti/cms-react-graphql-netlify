@@ -5,30 +5,35 @@ export const LayoutWrapper = styled.section `
   width: 100%;
 `
 export const LayoutFooter = styled.footer`
-  display: grid;
+  display: flex;
   background-color: yellow;
   width: 100%;
+  justify-content: center;
   text-align: center;
 `
 export const LayoutNav = styled.nav`
-  display: grid;
-  min-height: 50px;
-  grid-auto-flow: column;
+  display: flex;
+  min-height: 100px;
+  align-content: center;
   background-color: pink;
-  text-decoration: none;
-  grid-gap: 40px;
   padding-left: 20px;
   padding-right: 20px;
 `
-export const LayoutLogo = styled.div`
-  display: grid;
+export const LayoutLogo = styled.h1`
+  display: flex;
+  align-self: center;
   justify-content: start;
-  align-content: center;
-  text-decoration: none;
+  font-size: 20px;
 `
-export const LayoutA = styled.a`
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  align-content: center;
+export const LayoutList = styled.a`
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  font-size: 20px;
 `
+export const LayoutLink = styled.a`
+  a:hover{
+  color: red;
+}
+`
+

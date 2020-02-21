@@ -11,24 +11,21 @@ const Header = () => (
       <h1><ImageHeader /></h1>
     </div>
   </header>
+
   <S.LayoutNav>
     <S.LayoutLogo>
-      <div><a href="/home">Logo</a></div>
+      <h1><a href="/home">Logo</a></h1>
     </S.LayoutLogo>
-    <div>
-      <nav>
-        <ul>
-          <S.LayoutA >
-          <a href="/"> Subsidiário </a>
-          <a href="/"> Home Scholling </a>
-          <a href="/"> Escritos </a>
-          <a href="/"> Cursos </a>
-          <a href="/about"> Sobre </a>
-          </S.LayoutA>
-        </ul>
-      </nav>
-    </div>
-    </S.LayoutNav>  
+      <S.LayoutList >
+          <S.LayoutLink>
+            <a href="/"> Link </a>
+            <a href="/"> Link </a>
+            <a href="/"> Link </a>
+            <a href="/"> Link </a>
+            <a href="/about"> Link </a>
+          </S.LayoutLink>
+        </S.LayoutList>
+    </S.LayoutNav>
   </>
 )
 
