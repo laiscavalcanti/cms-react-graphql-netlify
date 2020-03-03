@@ -13,25 +13,27 @@ export const LayoutFooter = styled.footer`
 `
 export const LayoutNav = styled.nav`
   display: flex;
+  width: 100%;
   min-height: 100px;
   align-content: center;
   background-color: pink;
   padding-left: 20px;
   padding-right: 20px;
+  justify-content: space-between;
 `
 export const LayoutLogo = styled.h1`
-  display: flex;
   align-self: center;
-  justify-content: start;
   font-size: 20px;
 `
-export const LayoutList = styled.a`
+export const LayoutList = styled.div`
   display: flex;
-  align-self: center;
+  flex-wrap: wrap;
+  flex: 1;
   justify-content: flex-end;
-  font-size: 20px;
 `
 export const LayoutLink = styled.a`
+  align-self: center;
+  font-size: 20px;
   a:hover{
   color: red;
 }

@@ -22,7 +22,7 @@ const Header = () => (
             <a href="/"> Link </a>
             <a href="/"> Link </a>
             <a href="/"> Link </a>
-            <a href="/about"> Link </a>
+            <a href="/about"> About </a>
           </S.LayoutLink>
         </S.LayoutList>
     </S.LayoutNav>

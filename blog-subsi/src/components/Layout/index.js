@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import * as S from './styled'
 import Header from "../header"
-import Profile from "../Profile"
 import GlobalStyles from '../../styles/global'
+import Infos from "../Infos"
 
 const Layout = ({ children }) => {
   return (
@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <S.LayoutFooter>
         <footer>
           <section>
-            <Profile />
+            <Infos />
               
               © {new Date().getFullYear()}, Cícero Marra.
               {` `}
