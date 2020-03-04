@@ -1,29 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
-import * as S from './styled'
-import Header from "../header"
+import * as S from '../Header/styled'
+import Header from "../Header/header"
 import GlobalStyles from '../../styles/global'
-import Infos from "../Infos"
+import Profile from "../Profile"
 
 const Layout = ({ children }) => {
   return (
     <>
-    <GlobalStyles />
-      <S.LayoutWrapper>
+    <GlobalStyles /> 
         <Header />     
-          
-      </S.LayoutWrapper>
         <main>{children}</main>
-      <S.LayoutFooter>
         <footer>
-          <section>
-            <Infos />
-              
+          <Profile />  
               © {new Date().getFullYear()}, Cícero Marra.
               {` `}
-          </section>
         </footer>
-      </S.LayoutFooter>
+      
       </>
   )
 }

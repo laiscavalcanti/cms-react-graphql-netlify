@@ -1,8 +1,8 @@
 /**import { Link } from "gatsby"  <Link>{siteTitle}
 </Link>*/
 import React from "react"
-import ImageHeader from "./ImageHeader"
-import * as S from './Layout/styled'
+import ImageHeader from "../ImageHeader"
+import * as S from './styled'
 
 const Header = () => (
   <>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `blog subsidiário`,
+    title: `subsidiário`,
     position: `Um aprendiz a escritor`,
     description: `Um blog sobre literatura, línguas, educação e diários`,
     author: `@laiscavalcanti`,
