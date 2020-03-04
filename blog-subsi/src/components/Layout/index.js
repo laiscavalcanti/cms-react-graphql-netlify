@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <Profile />  
-              © {new Date().getFullYear()}, Cícero Marra.
+              © {new Date().getFullYear()}, subsidiário.
               {` `}
         </footer>
       

@@ -1,15 +1,22 @@
-<html>
-    <script>
-        function pulaLinha(qtda){
-            for(x=0;x<=qtda;x++){
-                document.write("<br>");   
-                x++;
-            }          
-        }
 
 
-    document.write("Hello");
-    pulaLinha(10000);
-    document.write("Tudo bem?");
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+
+             mostra("O meu IMC é " + Math.round(calculaImc(1.63, 48)));
+
 </script>
-</html>
+
