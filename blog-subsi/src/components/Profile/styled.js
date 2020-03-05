@@ -6,19 +6,31 @@ export const ProfileWrapper = styled.section`
     flex-direction: column;
     align-items: flex-end;
     padding: 20px;
-    background-color: orange;
+    background-color: #9e9199;
+    margin-top: 28vw;
 `
 export const ProfileLink = styled(Link)`
-    color: black;
+    color: #4d1635;
     flex-direction: column;
     transition: color 0.5s;
+    margin-top: 10px;
 `
 export const ProfileTitle = styled.h1`
-    font-size: 1.8rem;
+    font-size: 1.95rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px;
+    a::after{
+        content: '____________';
+    }
 `
 export const ProfilePosition = styled.small`
-   font-size: 1.4rem;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight:600;
+   margin-top: 10px;
+   font-size: 1.5rem;
 `
 export const ProfileDescription = styled.p `
-    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 10px;
 `

@@ -1,15 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
-import * as S from '../Header/styled'
-import Header from "../Header/header"
+import Header from "../Header"
 import GlobalStyles from '../../styles/global'
 import Profile from "../Profile"
+import SideBar from "../SideBar"
 
 const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyles /> 
-        <Header />     
+    <SideBar />  
+        <Header />
         <main>{children}</main>
         <footer>
           <Profile />  

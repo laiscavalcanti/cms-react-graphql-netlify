@@ -2,7 +2,7 @@
 </Link>*/
 import React from "react"
 import ImageHeader from "../ImageHeader"
-import SideBar from "../SideBar"
+//import SideBar from "../SideBar"
 //import * as S from './styled'
 
 const Header = () => (
@@ -12,10 +12,8 @@ const Header = () => (
       <h1><ImageHeader /></h1>
     </div>
   </header>
-  <SideBar />
+
   </>
 )
-
-
 
 export default Header

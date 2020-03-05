@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-//@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,600&display=swap')
 
 const GlobalStyles = createGlobalStyle `
 *, 
@@ -13,7 +12,7 @@ const GlobalStyles = createGlobalStyle `
 
 body{
     font-size: 100%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     list-style-type: none;
 }
 `

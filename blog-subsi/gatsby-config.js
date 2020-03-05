@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: `subsidiário`,
@@ -17,10 +19,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Playfair Display']
+          families: [ 'Playfair Display', 'EB Garamond', 'Source Sans Pro']
         },
       },
     },
