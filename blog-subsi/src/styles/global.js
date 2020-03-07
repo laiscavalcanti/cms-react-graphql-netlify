@@ -14,6 +14,7 @@ body{
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     list-style-type: none;
+    background-color: #fff8dc;
 }
 `
 export default GlobalStyles

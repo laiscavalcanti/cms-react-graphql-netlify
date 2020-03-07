@@ -1,10 +1,9 @@
 import React from "react"
 import * as S from './styled'
 
-
 const SideBar = () =>(
     <S.LayoutNav>
-      <S.LayoutLogo ><a href="/"><h1>Logo</h1></a></S.LayoutLogo>
+      <S.LayoutLogo ><a href="/"><h1></h1></a></S.LayoutLogo>
       <S.LayoutList >
           <S.LayoutLink>
             <a href="/"> textos </a>

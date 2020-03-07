@@ -9,11 +9,11 @@ const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyles /> 
-    <SideBar />  
-        <Header />
-        <main>{children}</main>
+      <Header />
+      <SideBar />  
+      <main>{children}</main>
         <footer>
-          <Profile />  
+          <Profile ></Profile>
               © {new Date().getFullYear()}, subsidiário.
               {` `}
         </footer>

@@ -1,9 +1,10 @@
 const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: `subsidiário`,
-    position: `Um aprendiz a escritor`,
-    description: `Um blog sobre literatura, línguas, educação e diários`,
+    position: `um aprendiz a escritor`,
+    description: `blog sobre literatura, línguas, educação e diários`,
     author: `@laiscavalcanti`,
   },
     
