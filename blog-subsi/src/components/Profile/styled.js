@@ -1,24 +1,28 @@
 import styled from "styled-components"
-import { Link } from 'gatsby'
 
 export const ProfileWrapper = styled.footer`
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
     padding: 20px;
-    background-color: #fff8dc;
+    background-color: #FFF8DC;
     margin-top: 31vw;
 `
-export const ProfileLink = styled(Link)`
-   
+export const ProfileContainer = styled.section`
+    
 `
-export const ProfileTitle = styled.h1`
+export const ProfileTitle = styled.h2`
     font-size: 1.95rem;
+    font-weight:700;
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 10px;
     color: #000723;
     letter-spacing: 1.5px;
-    flex-direction: column;
+    &:hover{
+        opacity: 0.5;
+        transition: opacity 0.3s, transform 0.7s;
+        transform: translateY(3px);
+        background: #fff8dc;
+    }
 `
 export const ProfilePosition = styled.small`
    font-family: 'Source Sans Pro', sans-serif;
