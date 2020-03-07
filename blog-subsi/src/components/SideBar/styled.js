@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { Link } from "gatsby"
 
 export const LayoutNav = styled.nav`
   display: flex;
+  justify-content: flex-end;
   left: 0;
   right: 0;
   z-index: 1;
@@ -18,28 +20,20 @@ export const LayoutLogo = styled.h1`
     color: #000723;
   }
 `
-export const LayoutList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  padding-right: 5vw;
-  justify-content: flex-end;
+export const LayoutList = styled.li`
+    padding: 20px;
+    .active{
+      color: #bc8f8f;
+    }
 `
-export const LayoutLink = styled.a`
-  align-self: center;
+export const LayoutLink = styled(Link)`
+  color: #000723;
   letter-spacing: 1.5px;
-  text-shadow: 0 0 1px rgba(255,255,255,0.4);
   font-size: 1.6rem;
   font-family: 'Source Sans Pro', sans-serif;
-  a{
-    padding: 20px;
-    color: #000723;
-  }
-  a:hover{
+  &:hover{
     opacity: 0.5;
-    transition: opacity 0.3s, transform 0.3s;
-    transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.3s;
     background: #fff8dc;
-  /*color: #bababa;*/
 }
 `

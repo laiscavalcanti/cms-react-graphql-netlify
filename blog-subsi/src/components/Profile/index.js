@@ -23,9 +23,9 @@ const Profile = () => {
     return (
         <S.ProfileWrapper>
           <S.ProfileContainer>
-            <a href ="/home"><S.ProfileTitle>
+            <S.ProfileTitle to='/home' title="voltar para home">
                {title}
-              </S.ProfileTitle></a>
+              </S.ProfileTitle>
               <S.ProfilePosition>{position}</S.ProfilePosition>
              <S.ProfileDescription>{description}</S.ProfileDescription>
              </S.ProfileContainer>
