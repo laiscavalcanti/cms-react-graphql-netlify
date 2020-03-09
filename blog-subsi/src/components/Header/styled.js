@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-export const LayoutWrapper = styled.div `
+export const HeaderWrapper = styled.div `
+  display: flex;
   width: 100%;
 `
 /*export const LayoutFooter = styled.footer`

@@ -3,14 +3,15 @@ import { Link } from 'gatsby'
 
 export const ProfileWrapper = styled.footer`
     display: flex;
+    justify-content: flex-start;
     width: 100%;
     padding: 20px;
     background-color: #FFF8DC;
     margin-top: 31vw;
 `
 export const ProfileContainer = styled.section`
-    display: flex;
     flex-direction: column;
+    align-content: flex-start;
 `
 export const ProfileTitle = styled(Link)`
     font-size: 1.95rem;

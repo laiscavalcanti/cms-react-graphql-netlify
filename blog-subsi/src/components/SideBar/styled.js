@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 export const LayoutNav = styled.nav`
   display: flex;
+  position: absolute;
   justify-content: flex-end;
   left: 0;
   right: 0;

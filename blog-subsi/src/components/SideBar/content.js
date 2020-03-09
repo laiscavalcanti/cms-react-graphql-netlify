@@ -5,12 +5,12 @@ import Icon from './Icon'
 const links = [
     {
         label: 'textos',
-        url: '/',
+        url: '/textos',
         icon: ''
     },    
     { 
         label: 'diários',
-        url: '/',
+        url: '/diarios',
         icon: ''
     },
     { 
