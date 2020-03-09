@@ -3,12 +3,9 @@ import { Link } from "gatsby"
 
 export const LayoutNav = styled.nav`
   display: flex;
-  position: absolute;
+  position: fixed;
   justify-content: flex-end;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  min-height: 100px;
+  width: 100%;
   background-color: #fff8dc;
   padding-left: 20px;
   padding-right: 20px;

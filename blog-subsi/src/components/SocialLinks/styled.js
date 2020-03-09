@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SocialLinksWrapper = styled.nav `
-    width: 65%;
+    width: 100%;
 `
 export const SocialLinksList =styled.ul `
    display: flex;

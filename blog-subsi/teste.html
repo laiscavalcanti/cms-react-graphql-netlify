@@ -1,44 +1,25 @@
-<canvas width="600" height="400"></canvas>
-
 <script>
-    //Base para trabalho
-    var tela = document.querySelector('canvas');
-    var pincel = tela.getContext('2d');
-    pincel.fillStyle = 'lightgray';
-    pincel.fillRect(0, 0, 600, 400);
 
-    //Nosso círculo
-    function desenhaCirculo(x, y, raio, cor) {
-        pincel.fillStyle = cor;
-        pincel.beginPath();
-        pincel.arc(x, y, raio, 0, 2 * Math.PI);
-        pincel.fill();
+    function pulaLinha() {
+        document.write("<br>");
     }
 
-    //Funções de movimento
+    function mostra(frase) {
 
-    function limpaTela() {
-        pincel.clearRect(0, 0, 600, 400);
+        document.write(frase);
+        pulaLinha();
     }
 
-    var raio = 20;
-    var sentidoCrescimento = 1;
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
 
-    function atualizaTela() {
+    while(anoCopa <= limite) {
 
-        limpaTela();
+        
 
-        if( raio >= 30) {
-            sentidoCrescimento = -1;
-        } else if (raio < 20) {
-            sentidoCrescimento = 1;
-        } 
+    if(anoCopa = anoCopa + 4){
 
-        desenhaCirculo(200, 200, raio, 'blue');
-        raio = raio + sentidoCrescimento;
-    }
-
-    setInterval(atualizaTela, 20);
-
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+   }
+}
 </script>
-

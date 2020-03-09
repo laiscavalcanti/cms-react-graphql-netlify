@@ -3,11 +3,13 @@ import { Link } from 'gatsby'
 
 export const ProfileWrapper = styled.footer`
     display: flex;
+    position: absolute;
     justify-content: flex-start;
     width: 100%;
     padding: 20px;
     background-color: #FFF8DC;
-    margin-top: 31vw;
+    bottom: 0;
+    right: 0;
 `
 export const ProfileContainer = styled.section`
     flex-direction: column;
@@ -27,6 +29,7 @@ export const ProfileTitle = styled(Link)`
     }
 `
 export const ProfilePosition = styled.small`
+    display: flex;
    font-family: 'Source Sans Pro', sans-serif;
    letter-spacing: 1.5px;
    font-weight:600;

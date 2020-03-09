@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const HeaderWrapper = styled.div `
-  display: flex;
-  width: 100%;
+ width: 100%;
+ position: absolute;
+ display:flex;
+ height: 6rem;
+ justify-content: center;
+
 `
-/*export const LayoutFooter = styled.footer`
-  display: flex;
-  background-color: yellow;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-`*/
+

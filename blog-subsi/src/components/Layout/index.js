@@ -8,21 +8,25 @@ import MenuBar from "../MenuBar"
 
 import * as S from './styled'
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
     <S.LayoutWrapper>
-    <GlobalStyles /> 
-      <Header />
-      <SideBar />
-      <S.LayoutMain>
-        <MenuBar />
-      </S.LayoutMain>
-        <footer>
-          <Profile />
-              © {new Date().getFullYear()}, subsidiário.
-              {` `}
-        </footer>
+      <GlobalStyles />
+        <Header />
+          <SideBar />
+            <S.LayoutMain>
+            </S.LayoutMain>
+              <section>
+                <MenuBar />
+              </section>
+              <footer>
+                <Profile >
+                  © {new Date().getFullYear()}, subsidiário.
+                    {` `}
+                </Profile>
+              </footer>
+
       </S.LayoutWrapper>
       </>
   )
