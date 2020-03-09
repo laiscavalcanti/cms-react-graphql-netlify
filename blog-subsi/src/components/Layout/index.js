@@ -20,13 +20,8 @@ const Layout = () => {
               <section>
                 <MenuBar />
               </section>
-              <footer>
-                <Profile >
-                  © {new Date().getFullYear()}, subsidiário.
-                    {` `}
-                </Profile>
-              </footer>
-
+                <Profile />
+        
       </S.LayoutWrapper>
       </>
   )

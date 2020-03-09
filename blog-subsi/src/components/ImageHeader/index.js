@@ -8,7 +8,7 @@ const ImageHeader = () => {
             query {
                 avatarImage: file(relativePath: { eq: "moon.jpg"}) {
                     childImageSharp{
-                        fluid(maxWidth: 1350, maxHeight: 250 ){
+                        fluid(maxWidth: 1750, maxHeight: 750 ){
                         ...GatsbyImageSharpFluid
                     }
                 }

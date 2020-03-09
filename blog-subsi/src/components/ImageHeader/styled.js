@@ -3,7 +3,8 @@ import Img from "gatsby-image"
 
 export const ImgWrapperHeader = styled(Img) `
     display: flex;
-    height: 20rem;
+    max: 940px;
+    min-height: 20rem;
     width: 100%;
     &:hover{
     opacity: 0.5;

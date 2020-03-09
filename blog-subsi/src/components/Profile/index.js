@@ -25,9 +25,13 @@ const Profile = () => {
           <S.ProfileContainer>
             <S.ProfileTitle to='/home' title="voltar para home">
                {title}
-              </S.ProfileTitle>
-              <S.ProfilePosition>{position}</S.ProfilePosition>
-             <S.ProfileDescription>{description}</S.ProfileDescription>
+            </S.ProfileTitle>
+              <S.ProfilePosition>
+                {position}
+              </S.ProfilePosition>
+             <S.ProfileDescription>
+               {description}
+             </S.ProfileDescription>
              </S.ProfileContainer>
              <SocialLinks />
         </S.ProfileWrapper>

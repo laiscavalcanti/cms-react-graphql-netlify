@@ -6,10 +6,9 @@ export const MenuBarWrapper = styled.aside`
     justify-content: center;
     height: 3.75rem;
     width: 100%;
-    position: absolute;
-    bottom: 11rem;
+    position: relative;
+    bottom: 0;
     right: 0;
-
 `
 export const MenuBarList = styled.div`
     display: flex;

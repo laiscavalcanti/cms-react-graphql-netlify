@@ -27,6 +27,10 @@ const SocialLinks = () =>(
                 )
             })}
         </S.SocialLinksList>
+        <S.ProfileC>
+                © {new Date().getFullYear()},  todos os direitos reservados: subsidiário
+                    {` `}
+            </S.ProfileC>
     </S.SocialLinksWrapper>
 )
 
