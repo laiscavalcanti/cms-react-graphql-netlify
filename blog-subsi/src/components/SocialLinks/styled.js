@@ -8,12 +8,18 @@ export const SocialLinksWrapper = styled.div `
     align-items: flex-end;
     flex-direction: column;
     background-color: #ffe4c4;
+    &:hover{
+    opacity: 0.5;
+    transition: opacity 0.1s, transform 0.3s;
+    background: #fff8dc;
+}
 `
 export const SocialLinksList =styled.nav `
    width: 100%;
    display: flex;
    justify-content: flex-end;
    margin: 1rem;
+   flex-wrap: wrap;
 `
 export const SocialLinksItem = styled.li `
     margin: 15px;

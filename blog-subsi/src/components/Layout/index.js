@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header"
 import GlobalStyles from '../../styles/global'
-import Profile from "../Profile"
 import SideBar from "../SideBar"
-import MenuBar from "../MenuBar"
+import PostItem from "../PostItem"
 
 import * as S from './styled'
+import FooterLayout from "../Footer"
 
 const Layout = () => {
   return (
@@ -16,9 +16,8 @@ const Layout = () => {
         <Header />
           <SideBar />
             <S.LayoutMain>
-             
             </S.LayoutMain>
-                <Profile />
+            <FooterLayout />      
       </S.LayoutWrapper>
       </>
   )

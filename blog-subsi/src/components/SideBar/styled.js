@@ -6,6 +6,7 @@ export const LayoutNav = styled.nav`
   position: fixed;
   justify-content: flex-end;
   width: 100%;
+  flex-wrap: wrap;
   background-color: #fff8dc;
   padding-left: 20px;
   padding-right: 20px;

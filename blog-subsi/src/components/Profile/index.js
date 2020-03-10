@@ -21,7 +21,7 @@ const Profile = () => {
       }
     `) 
     return (
-        <S.ProfileWrapper>
+        
           <S.ProfileContainer>
             <S.ProfileTitle to='/home' title="voltar para home">
                {title}
@@ -33,8 +33,7 @@ const Profile = () => {
                {description}
              </S.ProfileDescription>
              </S.ProfileContainer>
-             <SocialLinks />
-        </S.ProfileWrapper>
+        
     )
 }
 

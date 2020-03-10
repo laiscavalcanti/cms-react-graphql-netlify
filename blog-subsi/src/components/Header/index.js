@@ -8,8 +8,6 @@ const Header = () => (
   <S.HeaderWrapper>
     <ImageHeader />
   </S.HeaderWrapper>
-   
-
   </>
 )
 

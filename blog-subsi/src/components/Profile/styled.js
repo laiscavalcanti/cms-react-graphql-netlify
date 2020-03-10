@@ -2,22 +2,17 @@ import styled from "styled-components"
 import { Link } from 'gatsby'
 
 export const ProfileWrapper = styled.footer`
-    display: flex;
-    position: fixed;
-    justify-content: flex-start;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    background-color: #BC8F8F;
-    height: 12rem;
+   
 `
-export const ProfileContainer = styled.section`
+export const ProfileContainer = styled.div`
     display: flex;
-    width: 200%;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 12rem;
     flex-direction: column;
     align-content: flex-start;
     background-color: #BC8F8F;
-    margin: 15px;
+
 `
 export const ProfileTitle = styled(Link)`
     font-size: 2rem;
