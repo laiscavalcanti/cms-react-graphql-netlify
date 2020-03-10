@@ -6,11 +6,16 @@ export const LayoutNav = styled.nav`
   position: fixed;
   justify-content: flex-end;
   width: 100%;
+  top: 0;
   flex-wrap: wrap;
-  background-color: #fff8dc;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #fff8dc;
   box-shadow: 1px 12px 5px -10px rgba(0,0,0,0.15);
+  &:hover{
+    opacity: 0.5;
+    transition: opacity 0.5s, transform 0.3s;
+    background: #fff8dc;
 `
 export const LayoutLogo = styled.h1`
   align-self: center;

@@ -22,7 +22,6 @@ export const SocialLinksList =styled.nav `
    flex-wrap: wrap;
 `
 export const SocialLinksItem = styled.li `
-    margin: 15px;
     padding-left: 1rem;
     padding-right: 2rem;
 `
@@ -44,7 +43,7 @@ export const ProfileC = styled.span`
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 4rem;
+    padding-top: 5rem;
     margin-right: 0.5rem;
     font-size: 0.9rem;
     letter-spacing: 0.10rem;

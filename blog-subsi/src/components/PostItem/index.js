@@ -6,14 +6,17 @@ const PostItem = () => (
 
     <S.PostItemLink to ="/slug/">
         <S.PostItemWrapper>
-            <S.PostItemTag>lais</S.PostItemTag>
+            
             <S.PostItemInfo>
-                <S.PostItemDate>22/02</S.PostItemDate>
-                <S.PostItemTitle>sousa</S.PostItemTitle>
-                <S.PostItemDescription>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</S.PostItemDescription>
+            <S.PostItemTitle>TITULO</S.PostItemTitle>
+                <S.PostItemDate>DATA POST</S.PostItemDate>
+                <S.PostItemDescription>DESCRIPTION</S.PostItemDescription>
+                <S.PostItemTag>TAG</S.PostItemTag>
             </S.PostItemInfo>
         </S.PostItemWrapper>
     </S.PostItemLink>
+
+
 )
 
 export default PostItem

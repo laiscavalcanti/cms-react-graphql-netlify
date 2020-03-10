@@ -1,9 +1,6 @@
 import styled from "styled-components"
 import { Link } from 'gatsby'
 
-export const ProfileWrapper = styled.footer`
-   
-`
 export const ProfileContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +9,9 @@ export const ProfileContainer = styled.div`
     flex-direction: column;
     align-content: flex-start;
     background-color: #BC8F8F;
-
+`
+export const ProfileWrapper = styled.section`
+    margin:1rem;
 `
 export const ProfileTitle = styled(Link)`
     font-size: 2rem;

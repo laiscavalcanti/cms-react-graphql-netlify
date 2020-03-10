@@ -3,12 +3,11 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import PostItem from "../components/PostItem"
 
 const IndexPage = () => (
-  <Layout >
+  <Layout>
     <SEO title="Subsidiário" />
-      <PostItem />
+      
   </Layout>
 )
 
