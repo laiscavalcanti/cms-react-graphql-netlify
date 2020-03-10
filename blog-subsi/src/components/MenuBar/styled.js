@@ -7,8 +7,6 @@ export const MenuBarWrapper = styled.aside`
     height: 3.75rem;
     width: 100%;
     position: relative;
-    bottom: 0;
-    right: 0;
 `
 export const MenuBarList = styled.div`
     display: flex;

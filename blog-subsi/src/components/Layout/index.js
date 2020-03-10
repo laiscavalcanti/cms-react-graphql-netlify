@@ -16,12 +16,9 @@ const Layout = () => {
         <Header />
           <SideBar />
             <S.LayoutMain>
+             
             </S.LayoutMain>
-              <section>
-                <MenuBar />
-              </section>
                 <Profile />
-        
       </S.LayoutWrapper>
       </>
   )

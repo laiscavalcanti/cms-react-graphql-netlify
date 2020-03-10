@@ -1,25 +1,25 @@
+<canvas width="600" height="400"></canvas>
+
 <script>
 
-    function pulaLinha() {
-        document.write("<br>");
-    }
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
 
-    function mostra(frase) {
 
-        document.write(frase);
-        pulaLinha();
-    }
+    pincel.fillStyle = 'lightgrey';
+    pincel.fillRect(0, 0, 600, 400);
 
-    var anoCopa = 1930;
-    var limite = parseInt(prompt("Qual é o ano limite?"));
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 200, 400);
 
-    while(anoCopa <= limite) {
+    pincel.fillStyle = 'red';
+    pincel.fillRect(400, 0, 200, 400);
 
-        
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 200);
+    pincel.lineTo(200, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
 
-    if(anoCopa = anoCopa + 4){
-
-    mostra("Ufa! Esses foram os anos de copa até " + limite);
-   }
-}
-</script>
+    </script>

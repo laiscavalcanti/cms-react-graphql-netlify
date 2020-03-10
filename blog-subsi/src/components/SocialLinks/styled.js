@@ -1,19 +1,24 @@
 import styled from 'styled-components'
 
-export const SocialLinksWrapper = styled.nav `
+export const SocialLinksWrapper = styled.div `
     width: 100%;
-    height: 10rem;
+    height: 12rem;
+    top: 2rem;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    
+    background-color: #ffe4c4;
 `
-export const SocialLinksList =styled.ul `
+export const SocialLinksList =styled.nav `
+   width: 100%;
    display: flex;
+   justify-content: flex-end;
+   margin: 1rem;
 `
 export const SocialLinksItem = styled.li `
-    padding: 0px 10px 0px 0px;
-    margin: 10px;
+    margin: 15px;
+    padding-left: 1rem;
+    padding-right: 2rem;
 `
 export const SocialLinksLink = styled.a`
     color: #000723;
@@ -30,7 +35,11 @@ export const IconWrapper = styled.div `
     height: 35px;
 `
 export const ProfileC = styled.span`
-    padding-top: 5.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4rem;
+    margin-right: 0.5rem;
     font-size: 0.9rem;
     letter-spacing: 0.10rem;
     font-family: 'Source Sans Pro', sans-serif;
