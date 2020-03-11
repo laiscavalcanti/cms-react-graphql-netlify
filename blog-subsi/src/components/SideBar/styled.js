@@ -16,6 +16,7 @@ export const LayoutNav = styled.nav`
     opacity: 0.5;
     transition: opacity 0.5s, transform 0.3s;
     background: #fff8dc;
+  }
 `
 export const LayoutLogo = styled.h1`
   align-self: center;

@@ -2,11 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header"
 import GlobalStyles from '../../styles/global'
-import SideBar from "../SideBar"
+import PostItem from "../PostItem"
 import FooterLayout from "../Footer"
 
 import * as S from './styled'
-import PostItem from "../PostItem"
 
 
 const Layout = () => {
@@ -15,10 +14,19 @@ const Layout = () => {
     <S.LayoutWrapper>
       <GlobalStyles />
           <Header />
-            <S.LayoutMain>
-              <PostItem />
-              <PostItem />
-              <PostItem />
+            <S.LayoutMain>      
+              <S.GridContainer>
+                <S.GridArea>
+                <PostItem />
+                <PostItem />
+                <PostItem />
+                <PostItem />
+                <PostItem />
+                <PostItem />
+                <PostItem />
+                <PostItem />
+                </S.GridArea>
+              </S.GridContainer>
             </S.LayoutMain>
             <FooterLayout />      
       </S.LayoutWrapper>
