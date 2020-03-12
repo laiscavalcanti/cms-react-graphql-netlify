@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
-      query postList {
+      query PostList {
         allMarkdownRemark {
           edges {
             node {
@@ -17,17 +17,16 @@ const IndexPage = () => {
                 category
                 date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
                 description
-              title
+                title
+              }
+            timeToRead
           }
-          timeToRead
+        }
       }
     }
-  }
-}
   `)
 const postList = allMarkdownRemark.edges
   return (
-    <>
   <Layout>
     <SEO title="Subsidiário" />
     {postList.map(({
@@ -36,7 +35,7 @@ const postList = allMarkdownRemark.edges
                     timeToRead,
                     fields: {slug}
                   },
-                  })=>(
+                  }) => (
                     <PostItem 
                     slug={slug}
                     background={background}
@@ -46,11 +45,10 @@ const postList = allMarkdownRemark.edges
                     title={title}
                     description={description}
                   />
-                  ))}
-      
-  </Layout>
-  </>
-  )
-}
+                  )
+              )}
+        </Layout>
+      )
+    }
 
 export default IndexPage

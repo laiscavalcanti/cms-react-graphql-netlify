@@ -6,7 +6,7 @@ import * as S from './styled'
 
 const SideBar = () =>(
     <S.LayoutNav>
-      <S.LayoutLogo ><a href="/"><h1></h1></a></S.LayoutLogo>
+      <S.LayoutLogo ><a href="/about" alt="logo"></a></S.LayoutLogo>
         {links.map((link, i)=>(
           <S.LayoutList key={i}>
             <S.LayoutLink to={link.url} activeClassName="active"

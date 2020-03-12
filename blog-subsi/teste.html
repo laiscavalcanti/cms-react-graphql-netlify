@@ -1,67 +1,14 @@
-<canvas width="600" height="400"></canvas>
-
+<meta charset="UTF-8">
 <script>
-    //O jogo do Alvo
-    //Objetivo: usar o ponteiro do mouse
-    // para acertar o centro do Alvo, em movimento.
+    function fazPegadinha() {}
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?"); 
 
-    //Base para trabalho
-    var tela = document.querySelector('canvas');
-    var pincel = tela.getContext('2d');
-    pincel.fillStyle = 'lightgray';
-    pincel.fillRect(0, 0, 600, 400);
-
-    //Base para o Alvo
-    function desenhaCirculo(x, y, raio, cor) {
-        pincel.fillStyle = cor;
-        pincel.beginPath();
-        pincel.arc(x, y, raio, 0, 2 * Math.PI);
-        pincel.fill();
-    }
-
-    var raio = 10;
-    var xAleatorio; //Definidas estas variáveis aqui
-    var yAleatorio; //podem ser usadas em diversas funções.
-
-    function limpaTela() {
-        pincel.clearRect(0, 0, 600, 400);
-    }
-
-    function desenhaAlvo(x, y) {
-        desenhaCirculo(x, y, raio + 20, 'red');
-        desenhaCirculo(x, y, raio + 10, 'white');
-        desenhaCirculo(x, y, raio, 'red');
-    }
-
-    //Funções de movimento do Alvo
-    function sorteiaPosicao(maximo) {
-        return Math.floor(Math.random() * maximo);
-    }
-
-    function atualizaTela() {
-        limpaTela();
-        xAleatorio = sorteiaPosicao(600);
-        yAleatorio = sorteiaPosicao(400);
-        desenhaAlvo(xAleatorio, yAleatorio);
-    }
-
-    setInterval(atualizaTela, 1000);
-
-    // Comandos para a Seta do mouse
-    function dispara(evento) {
-        var x = evento.pageX - tela.offsetLeft;
-        var y = evento.pageY - tela.offsetTop;
-
-        if ((x > xAleatorio - raio) &&
-            (x < xAleatorio + raio) &&
-            (y > yAleatorio - raio) &&
-            (y < yAleatorio + raio)) {
-
-            alert('Acertou!');
-        }
-
-    }
-
-    tela.onclick = dispara;
 </script>
-
