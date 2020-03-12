@@ -11,12 +11,12 @@ export const PostItemWrapper = styled(Link)`
 `
 export const PostItemTag = styled.div`
     color: blue;
-    background: lightsalmon;
+    background: ${props => props.background ? props.background : 'pink'};
 `
 export const PostItemInfo = styled.div`
     background-color: lightskyblue;
 `
-export const PostItemDate = styled.time`
+export const PostItemDate = styled.div`
     background-color: tomato;
 `
 export const PostItemTitle = styled.h1`

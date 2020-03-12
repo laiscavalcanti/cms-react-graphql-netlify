@@ -1,4 +1,6 @@
 import React from "react"
+import { useStaticQuery, graphql } from 'gatsby'
+
 import PropTypes from "prop-types"
 import Header from "../Header"
 import GlobalStyles from '../../styles/global'
@@ -9,6 +11,26 @@ import * as S from './styled'
 
 
 const Layout = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+      query postList {
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                background
+                category
+                date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+                description
+              title
+          }
+          timeToRead
+      }
+    }
+  }
+}
+  `)
+
+const postList = allMarkdownRemark.edges
   return (
     <>
     <S.LayoutWrapper>
@@ -17,14 +39,22 @@ const Layout = () => {
             <S.LayoutMain>      
               <S.GridContainer>
                 <S.GridArea>
-                <PostItem />
-                <PostItem />
-                <PostItem />
-                <PostItem />
-                <PostItem />
-                <PostItem />
-                <PostItem />
-                <PostItem />
+                {postList.map(({node: 
+                  {frontmatter: {category, background, date, description, title},
+                  timeToRead
+                  },
+                  })=>(
+                    <PostItem 
+                    slug="/about/"
+                    background={background}
+                    category={category}
+                    date={date}
+                    timeToRead={timeToRead}
+                    title={title}
+                    description={description}
+                  />
+                  ))}
+                  
                 </S.GridArea>
               </S.GridContainer>
             </S.LayoutMain>

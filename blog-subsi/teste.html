@@ -1,49 +1,67 @@
-<!DOCTYPE html>
+<canvas width="600" height="400"></canvas>
 
-<html lang="pt-br">
+<script>
+    //O jogo do Alvo
+    //Objetivo: usar o ponteiro do mouse
+    // para acertar o centro do Alvo, em movimento.
 
-    <head>
+    //Base para trabalho
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
 
-        <meta charset="utf-8">
-        <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="style.css">
+    //Base para o Alvo
+    function desenhaCirculo(x, y, raio, cor) {
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
 
-    </head>
+    var raio = 10;
+    var xAleatorio; //Definidas estas variáveis aqui
+    var yAleatorio; //podem ser usadas em diversas funções.
 
-    <body>
+    function limpaTela() {
+        pincel.clearRect(0, 0, 600, 400);
+    }
 
-        <img id= "banner" src="banner.jpg">
+    function desenhaAlvo(x, y) {
+        desenhaCirculo(x, y, raio + 20, 'red');
+        desenhaCirculo(x, y, raio + 10, 'white');
+        desenhaCirculo(x, y, raio, 'red');
+    }
 
-        <div class="principal">
+    //Funções de movimento do Alvo
+    function sorteiaPosicao(maximo) {
+        return Math.floor(Math.random() * maximo);
+    }
 
-            <h1>Sobre a Barbearia Alura</h1>
+    function atualizaTela() {
+        limpaTela();
+        xAleatorio = sorteiaPosicao(600);
+        yAleatorio = sorteiaPosicao(400);
+        desenhaAlvo(xAleatorio, yAleatorio);
+    }
 
-            <p>Localizada no coração da cidade, a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+    setInterval(atualizaTela, 1000);
 
-            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+    // Comandos para a Seta do mouse
+    function dispara(evento) {
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
 
-            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        if ((x > xAleatorio - raio) &&
+            (x < xAleatorio + raio) &&
+            (y > yAleatorio - raio) &&
+            (y < yAleatorio + raio)) {
 
-        </div>
+            alert('Acertou!');
+        }
 
+    }
 
-        <div class="beneficios">
-            <h2>Beneficios</h2>
+    tela.onclick = dispara;
+</script>
 
-            <ul>
-                <li class="itens">Atendimento aos Clientes</li>
-                <li class="itens">Espaço Diferenciado</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Profissionais Qualificados</li>
-            </ul>
-
-            <img src="beneficios.jpg" class="imagembeneficio">
-
-
-
-        </div>
-
-
-    </body>    
-
-</html>
