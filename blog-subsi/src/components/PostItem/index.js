@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import * as S from './styled'
+import MainGrid from '../Main'
 
 const PostItem = ({slug, category, background, date, timeToRead, description, title}) => (
+   
         <S.PostItemLink to ={slug}>
             <S.PostItemWrapper>
                     <S.PostItemTitle>{title}</S.PostItemTitle>
@@ -11,7 +13,8 @@ const PostItem = ({slug, category, background, date, timeToRead, description, ti
                     <S.PostItemDescription>{description}</S.PostItemDescription>
                     <S.PostItemTag background={background}>{category}</S.PostItemTag>
             </S.PostItemWrapper>
-        </S.PostItemLink> 
+        </S.PostItemLink>
+     
 )
 
 PostItem.propTypes={

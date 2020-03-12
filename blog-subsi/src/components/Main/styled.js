@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const LayoutWrapper = styled.section`
-  display: flex;
 `
 export const LayoutMain = styled.main`
+  min-height: 100vh;
   width: 100%;
 `
-/*export const GridContainer = styled.div`
+export const GridContainer = styled.div`
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 25% 25% 25% 25%;
@@ -15,4 +15,4 @@ export const LayoutMain = styled.main`
 export const GridArea =styled.div`
   grid-column: 2/4 ;
   grid-row: 2/4;  
-`*/
+  `

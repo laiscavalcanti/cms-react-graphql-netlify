@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const PostItemLink = styled.section`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
 `
 export const PostItemWrapper = styled(Link)`
    

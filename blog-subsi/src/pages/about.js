@@ -1,7 +1,7 @@
 import React from 'React'
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-//import Header from '../components/header'
+
 
 const AboutPage = () =>(
     <Layout >
