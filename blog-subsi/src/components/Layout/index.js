@@ -16,6 +16,7 @@ const Layout = () => {
         allMarkdownRemark {
           edges {
             node {
+              fields{slug}
               frontmatter {
                 background
                 category
@@ -39,13 +40,15 @@ const postList = allMarkdownRemark.edges
             <S.LayoutMain>      
               <S.GridContainer>
                 <S.GridArea>
-                {postList.map(({node: 
-                  {frontmatter: {category, background, date, description, title},
-                  timeToRead
+                {postList.map(({
+                  node: {
+                    frontmatter: {category, background, date, description, title},
+                    timeToRead,
+                    fields: {slug}
                   },
                   })=>(
                     <PostItem 
-                    slug="/about/"
+                    slug={slug}
                     background={background}
                     category={category}
                     date={date}

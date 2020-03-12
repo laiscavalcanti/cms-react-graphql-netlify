@@ -2,7 +2,6 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import * as S from './styled'
-import SocialLinks from '../SocialLinks'
 
 const Profile = () => {
     const {
