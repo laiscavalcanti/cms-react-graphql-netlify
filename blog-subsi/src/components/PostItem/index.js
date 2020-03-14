@@ -5,7 +5,6 @@ import * as S from './styled'
 
 
 const PostItem = ({slug, category, background, date, timeToRead, description, title}) => (
-    
         <S.PostItemLink to ={slug}>
             <S.PostItemWrapper>
                     <S.PostItemTitle>{title}</S.PostItemTitle>

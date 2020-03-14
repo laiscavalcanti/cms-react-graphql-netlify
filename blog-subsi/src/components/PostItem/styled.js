@@ -3,23 +3,20 @@ import { Link } from 'gatsby'
 
 export const PostItemLink = styled.section`
     display: flex;
-    &:hover{
-    opacity: 0.5;
-    transition: opacity 0.5s, transform 0.3s;
-    background: #fff8dc;
-  }
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
 `
 export const PostItemWrapper = styled(Link)`
     display: flex;
-    position: relative;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    height: 100px;
     padding: 1rem 3rem;
-    margin: 10px;
     background-color: lightgreen;
     color: white;
-    
+   
 `
 export const PostItemTag = styled.div`
     display: flex;

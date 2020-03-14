@@ -1,14 +1,26 @@
 <meta charset="UTF-8">
-<script>
-    function fazPegadinha() {}
-        alert("Olá");
-        alert("amiga!");
-        alert("Tá");
-        alert("bastante");
-        alert("entediada?");
-        alert("Em ficar");
-        alert("Clicando em");
-        alert("Ok");
-        alert("né?"); 
 
+
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    if (idade >= 18 && temCarteira == "S") {
+        mostra ("Você pode dirigir, pois tem " + idade + " anos " + "e carteira de motorista = " + temCarteira);
+
+    } else { 
+        mostra ("Você não pode dirigir, pois tem " + idade + " anos " + "e carteira de motorista = " + temCarteira);
+        pulaLinha;
+        mostra ("Pra dirigir é necessario ter idade = 18 anos e carteira de motorista")
+            }
 </script>

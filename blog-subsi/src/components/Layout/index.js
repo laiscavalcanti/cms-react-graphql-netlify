@@ -12,11 +12,11 @@ const Layout = ({children}) => (
     <S.LayoutWrapper>
       <GlobalStyles />
           <Header />
-          
-
-            <main>{children}</main>
-
-            
+          <S.LayoutMain>
+            <main>
+              {children}
+            </main>
+          </S.LayoutMain>
           <FooterLayout />      
       </S.LayoutWrapper>
     </>
