@@ -1,9 +1,9 @@
 ---
-date: 2020-02-15 18:00
-title: Lorem 
-description: Ipsum dolor sit amet, consectetur adipiscing elit. 
-category: diário
-background: "lightgreen"
+date: 2020-02-28 19:00
+title: Lorem ipsum dolor sit amet
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+category: cursos
+background: "yellow"
 ---
 
 

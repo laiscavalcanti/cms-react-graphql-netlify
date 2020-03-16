@@ -1,9 +1,9 @@
 ---
-date: 2020-02-22 19:00
-title: Lorem ipsum dolor sit amet
+date: 2020-02-01 19:00
+title: Curso cícero inglês
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 category: cursos
-background: "yellow"
+background: "black"
 ---
 
 

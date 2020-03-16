@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-export const PostItemLink = styled.section`
+export const PostItemLink = styled(Link)`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem;
 `
-export const PostItemWrapper = styled(Link)`
+export const PostItemWrapper = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,8 +15,7 @@ export const PostItemWrapper = styled(Link)`
     height: 100px;
     padding: 1rem 3rem;
     background-color: lightgreen;
-    color: white;
-   
+    color: white; 
 `
 export const PostItemTag = styled.div`
     display: flex;
