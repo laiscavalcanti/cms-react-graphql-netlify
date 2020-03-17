@@ -1,0 +1,37 @@
+import styled from 'styled-components'
+import { Link } from 'gatsby'
+
+export const RecommendedWrapper = styled.section `
+    display: flex;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    
+`
+export const RecommendedLink = styled(Link) `
+  align-items: center;
+  background: #192734;
+  color: #1fa1f2;
+  display: flex;
+  padding: 3rem;
+  text-decoration: none;
+  transition: background 0.5s;
+  width: 50%;
+    &:hover{
+        background: red;
+    }
+    &.previous{
+        border-right: 1px solid pink;
+        
+    }
+    &.next{
+        justify-content: flex-start;
+    }
+    &.previous:before {
+    content: "\\2190";
+    margin-right: 0.5rem;
+  }
+  &.next:after {
+    content: "\\2192";
+    margin-left: 0.5rem;
+  } 
+`
