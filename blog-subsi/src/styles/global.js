@@ -8,8 +8,8 @@ const GlobalStyles = createGlobalStyle `
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    text-decoration: none;
     list-style-type: none;
+    text-decoration: none;
 }
 
 body{
@@ -17,5 +17,6 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #fff8dc;
 }
+
 `
 export default GlobalStyles

@@ -1,87 +1,28 @@
-
-
 <meta charset="UTF-8">
-<h1>  Torne seu programa dinâmico com variáveis </h1>
-    <br>
-    <br>    
-        <script>
-            alert("Aula 3");
-        </script>
-<h4> Datas de aniversário - contas aritiméticas </h4>
-        <script>
-            document.write("Flávio nasceu em " + (2020 - 40));
-            document.write("<br>");
-            document.write("Roberto nasceu em " + (2020 - 39));
-            document.write("<br>");
-            document.write("Marcelo nasceu em " + (2020 - 41));
-        </script>    
-    <br>
-    <br>
-<h4> Reduzindo alterações </h4>
-<h5> Variavel: var ano = "colocar qualquer ano"</h5>
-        <script>
-            var ano = 2020;
-            document.write("Clóvis tem  " + (ano - 1980) + " anos");
-            document.write("<br>");
-            document.write("Jurema tem  " + (ano - 1985) + " anos");
-            document.write("<br>");
-            ano = 2015;
-            document.write("Aroldo tem " + (ano - 1983) + " anos");
-        </script>
-    <br>
-    <br>    
-<h4> Facilitando nossa vida! TABUADA com variáveis </h4>
-        <script>
-            var n = 8
-            document.write(n + "vezes 1 é " + n * 1+ "<br>");
-            document.write(n + "vezes 2 é " + n * 2+ "<br>");
-            document.write(n + "vezes 3 é " + n * 3+ "<br>");
-            document.write(n + "vezes 4 é " + n * 4+ "<br>");
-            document.write(n + "vezes 5 é " + n * 5+ "<br>");
-            document.write(n + "vezes 6 é " + n * 6+ "<br>");
-            document.write(n + "vezes 7 é " + n * 7+ "<br>");
-            document.write(n + "vezes 8 é " + n * 8+ "<br>");
-            document.write(n + "vezes 9 é " + n * 9+ "<br>");
-            document.write(n + "vezes 10 é " + n * 10+ "<br>");
-        </script>
-    <br>
-<h4> Variável - média </h4>
-        <script>
-            var media = (40+35+32)/3;
-            document.write("A média das idades de Clóvis, Jurema e Aroldo é " + Math.round(media));
-        </script>    
-    <br>
-    <br>
-<h4>O detetive Roy!</h4>
-        <script>
-            var idadeLinda = 12;
-            var idadeGuaraciara = 15;
-            var idadePérola = 13;
-            var mediaIdade = (idadeLinda + idadeGuaraciara + idadePérola)/3;
-            document.write("A média das idades das minhas filhas é " + Math.round(mediaIdade));
-        </script>
-    <br>
-    <br>
-<h4>ORoy agora é programador!</h4>
-        <script>
-    var idadeLinda = 12;
-    var idadeGuaraciara = 15;
-    var idadePerola = 13;
-    var totalIdades = (idadeLinda + idadeGuaraciara + idadePérola);
-    document.write("A média das idades das filhas do hacker é " + Math.round(totalIdades/3));
-        </script>
-    <br>
-    <br>
-<h3>Álcool ou Gasolina?</h3>
-        <script>
-            var tanque = 40;
-            var caminhoComGasolina = 480;
-            var consumoDeGasolina = (caminhoComGasolina / tanque);
-            var caminhoComAlcool = 300;
-            var consumoDeAlcool = (caminhoComAlcool / tanque);
-            document.write("Consumo de Gasolina é " + consumoDeGasolina + " km/l " + "<br>");
-            document.write("Consumo de Alcool é " + consumoDeAlcool + " km/l ");
-        </script>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+var numeroPensado = Math.round(Math.random() * 10);
+var chute = parseInt(prompt(" Tente acertar um número de 0 a 10"));
+
+if(chute === numeroPensado) {
+    mostra("Você acertou!!");
+}  
+
+else {
+    mostra("Você errou, o número pensado foi " + numeroPensado);
+}
 
 
-
+</script>

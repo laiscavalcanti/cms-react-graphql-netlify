@@ -1,14 +1,14 @@
 import React from 'React'
+
+import SearchPage from "../components/Search"
 import SimpleLayout from "../components/SimpleLayout"
 import SEO from "../components/seo"
-
 
 const AboutPage = () =>(
     <SimpleLayout >
         <section>
-            <SEO title="About" />
-            <h1 >Search page</h1>
-            <p></p>
+            <SearchPage />
+            <SEO title="Search" />
         </section>
     </SimpleLayout>
 ) 

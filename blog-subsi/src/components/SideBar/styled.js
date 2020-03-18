@@ -7,9 +7,8 @@ export const LayoutNav = styled.nav`
   justify-content: flex-end;
   width: 100%;
   top: 0;
+  padding: 1rem;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #fff8dc;
   box-shadow: 1px 12px 5px -10px rgba(0,0,0,0.15);
   &:hover{
@@ -18,15 +17,10 @@ export const LayoutNav = styled.nav`
     background: #fff8dc;
   }
 `
-export const LayoutLogo = styled.h1`
-  align-self: center;
-  font-size: 20px;
-  a{
-    color: #000723;
-  }
-`
+
 export const LayoutList = styled.li`
-    padding: 20px;
+    padding: 0px 20px;
+    margin: 5px;
     .active{
       color: #bc8f8f;
     }

@@ -1,5 +1,4 @@
 import React from 'react'
-//import { Search } from "@styled-icons/evil/Search"
 import Icon from './Icon'
 
 const links = [

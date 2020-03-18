@@ -2,15 +2,14 @@ import React from "react"
 
 import links from './content'
 import * as S from './styled'
-
+import Logo from "../Logo"
 
 const SideBar = () =>(
     <S.LayoutNav>
-      <S.LayoutLogo ><a href="/about" alt="logo"></a></S.LayoutLogo>
+      <Logo />
         {links.map((link, i)=>(
           <S.LayoutList key={i}>
-            <S.LayoutLink to={link.url} activeClassName="active"
-            >
+            <S.LayoutLink to={link.url} activeClassName="active">
               {link.label}
               {link.icon}
             </S.LayoutLink>
