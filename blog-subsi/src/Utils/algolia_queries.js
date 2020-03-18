@@ -16,7 +16,7 @@ const postQuery =`
                     description
                     title
                 }
-                excerpt(pruneLenght: 5000)
+                excerpt(pruneLength: 5000)
             }
         }
     }
@@ -37,7 +37,7 @@ const queries = [
       transformer: ({ data }) => flatten(data.posts.edges),
       indexName: 'Posts',
       settings: {
-        attributesToSnippet: ['exerpt: 20']
+        attributesToSnippet: ['excerpt: 20']
       }
     },
   ];

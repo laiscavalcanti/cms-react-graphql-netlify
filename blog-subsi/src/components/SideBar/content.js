@@ -5,17 +5,17 @@ import Icon from './Icon'
 const links = [
     {
         label: 'textos',
-        url: '/textos',
+        url: '/textos/',
         icon: ''
     },    
     { 
         label: 'diários',
-        url: '/diarios',
+        url: '/diarios/',
         icon: ''
     },
     { 
         label: 'cursos',
-        url: '/',
+        url: '/cursos/',
         icon: ''
      },
     { 

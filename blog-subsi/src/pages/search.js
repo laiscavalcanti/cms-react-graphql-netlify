@@ -7,8 +7,8 @@ const AboutPage = () =>(
     <SimpleLayout >
         <section>
             <SEO title="About" />
-            <h1 >About Page</h1>
-            <p>llllllllllllllllll</p>
+            <h1 >Search page</h1>
+            <p></p>
         </section>
     </SimpleLayout>
 ) 
