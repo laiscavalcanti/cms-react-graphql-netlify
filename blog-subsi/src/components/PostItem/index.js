@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import * as S from './styled'
 
 
-const PostItem = ({slug, category, background, date, timeToRead, description, title}) => (
+const PostItem = ({slug, category, background, date, timeToRead, description, title, img}) => (
         <S.PostItemLink to ={slug}>
+            <S.PostItemImg>{img}</S.PostItemImg>
             <S.PostItemWrapper>
                     <S.PostItemTitle>{title}</S.PostItemTitle>
                     <S.PostItemDate>{date}, {timeToRead}</S.PostItemDate>
@@ -23,7 +24,8 @@ PostItem.propTypes={
     date: PropTypes.string.isRequired,
     timeToRead: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired
 }
 
 export default PostItem

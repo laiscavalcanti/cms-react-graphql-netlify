@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Img } from 'gatsby-image'
 import { Link } from 'gatsby'
 
 export const PostItemLink = styled(Link)`
@@ -15,6 +16,9 @@ export const PostItemWrapper = styled.section`
     padding: 1rem 3rem;
     background-color: lightgreen;
     color: white; 
+`
+export const PostItemImg = styled(Img)`
+
 `
 export const PostItemTag = styled.div`
     color: blue;
