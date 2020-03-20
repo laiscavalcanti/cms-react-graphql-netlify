@@ -19,6 +19,7 @@ const BlogPost = ({ data, pageContext }) =>{
             <S.PostDate>
                 {post.frontmatter.date} 〰 {post.timeToRead} min de Leitura
             </S.PostDate>
+            <S.PostImg>{post.frontmatter.img}</S.PostImg>
             <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
             <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
         </S.PostHeader>

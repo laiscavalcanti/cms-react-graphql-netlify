@@ -2,27 +2,19 @@
 
 <script>
 
-    function pulaLinha() {
+function mediaGastos(janeiro, fevereiro, marco, abril, maio) {
 
-        document.write("<br>");
-        document.write("<br>");
+var mes  =  5 ;
+ return ((janeiro + fevereiro + marco + abril + maio) /mes )
 }
 
-    function mostra(frase) {
+    var d1 = parseInt(prompt("insira o valor gasto em janeiro"));
+    var d2 = parseInt(prompt("insira o valor gasto em fevereiro"));
+    var d3 = parseInt(prompt("insira o valor gasto em março"));
+    var d4 = parseInt(prompt("insira o valor gasto em abril"));
+    var d5 = parseInt(prompt("insira o valor gasto em maio"));
+    var calculo = mediaGastos(d1, d2, d3, d4, d5);
 
-        document.write(frase);
-        pulaLinha();
-}
-var numeroPensado = Math.round(Math.random() * 10);
-var chute = parseInt(prompt(" Tente acertar um número de 0 a 10"));
-
-if(chute === numeroPensado) {
-    mostra("Você acertou!!");
-}  
-
-else {
-    mostra("Você errou, o número pensado foi " + numeroPensado);
-}
-
+    document.write( "voce gastou " + calculo);
 
 </script>

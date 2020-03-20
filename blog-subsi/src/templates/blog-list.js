@@ -20,13 +20,14 @@ const BlogList = props =>{
         <SEO title="Subsidiário" />
         {postList.map(({
                       node: {
-                        frontmatter: {category, background, date, description, title},
+                        frontmatter: {category, background, date, description, title, img},
                         timeToRead,
                         fields: {slug}
                       },
                       }) => (
                         <PostItem 
                         slug={slug}
+                        img={img}
                         background={background}
                         category={category}
                         date={date}
@@ -65,6 +66,7 @@ export const query = graphql `
                         category
                         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
                         description
+                        img
                         title
                     }
                 timeToRead
