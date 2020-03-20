@@ -27,11 +27,11 @@ const BlogList = props =>{
                       }) => (
                         <PostItem 
                         slug={slug}
-                        img={img}
                         background={background}
                         category={category}
                         date={date}
                         timeToRead={timeToRead}
+                        img={img}
                         title={title}
                         description={description}
                       />
