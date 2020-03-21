@@ -1,20 +1,107 @@
+
+
 <meta charset="UTF-8">
+<script>
+alert("Aula 5");
+</script>
+
+<br>   
+<script>
+alert("Convertendo texto em números / parsetInt");
+</script>
+<h3> Convertendo texto em números </h3>  
+<script>        
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var vitorias = parseInt(prompt ("Entre com o número de vitórias"));
+    var empates = parseInt(prompt ("Entre com o número de empates"));
+    var pontos = (vitorias * 3) + empates;
+        mostra("Os pontos do seu time são " + pontos);
+</script>
+<br>
 
 <script>
-
-function mediaGastos(janeiro, fevereiro, marco, abril, maio) {
-
-var mes  =  5 ;
- return ((janeiro + fevereiro + marco + abril + maio) /mes )
-}
-
-    var d1 = parseInt(prompt("insira o valor gasto em janeiro"));
-    var d2 = parseInt(prompt("insira o valor gasto em fevereiro"));
-    var d3 = parseInt(prompt("insira o valor gasto em março"));
-    var d4 = parseInt(prompt("insira o valor gasto em abril"));
-    var d5 = parseInt(prompt("insira o valor gasto em maio"));
-    var calculo = mediaGastos(d1, d2, d3, d4, d5);
-
-    document.write( "voce gastou " + calculo);
-
+alert("Convertendo texto em números / parsetInt 2");
 </script>
+<h3> O total de convidados é... </h3>  
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var convidados = parseInt(prompt("Número de convidados"));
+    var vips = parseInt (prompt("Número de convidados VIP's"));
+    var total = convidados + vips;
+        mostra("O total de convidados é " + total);
+</script>
+<br>
+
+<script>
+alert("Trabalhando com condições / if");
+</script>
+<h3> Trabalhando com condições </h3>  
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var vitorias = parseInt(prompt ("Entre com o número de vitórias"));
+    var empates = parseInt(prompt ("Entre com o número de empates"));
+    var pontos = (vitorias * 3) + empates;
+        mostra("Os pontos do seu time é " + pontos);
+    if(pontos>28) {
+        mostra("Seu time está melhor do que o ano passado");
+    }    
+    if(pontos<28) {
+        mostra("Seu time está pior do que o ano passado");
+    }
+    if(pontos==28) {
+        mostra("Seu time está igual ao ano passado");                
+    }   
+        mostra("FIM")
+</script>
+<br>
+
+<script>
+alert("Melhorando programa de IMC / if ,< ,== ,> ,&&");
+</script>
+<h3> Melhorando programa de IMC </h3>  
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(peso,altura) {
+        return peso / (altura * altura);
+    }
+    var nome = prompt("informe seu nome")    
+    var alturaInformada = prompt(nome + ", Informe sua altura"); 
+    var pesoInformado = prompt(nome + ", Informe seu peso"); 
+    var imc = calculaImc (pesoInformado,alturaInformada);
+        mostra(nome + ", o seu IMC  é  " + Math.round (imc)); 
+    if(imc < 18.5) {
+        mostra("Você está abaixo do recomendado");
+    }
+    if(imc > 35) {
+        mostra("Você está acima do recomendado");
+    }
+    if(imc >= 18.5 && imc <= 35) {
+        mostra("Seu IMC esta excelente!");
+    }
+</script>
+<br>
+

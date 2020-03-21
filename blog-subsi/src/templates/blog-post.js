@@ -11,6 +11,7 @@ const BlogPost = ({ data, pageContext }) =>{
     const post = data.markdownRemark
     const next = pageContext.nextPost
     const previous = pageContext.previousPost
+    const featuredImgFluid = post.frontmatter.img.childImageSharp.fluid
 
     return (
     <SimpleLayout>
@@ -20,7 +21,7 @@ const BlogPost = ({ data, pageContext }) =>{
                 {post.frontmatter.date} 〰 {post.timeToRead} min de Leitura
             </S.PostDate>
             
-            <S.PostImg>fluid ={post.frontmatter.img.childImageSharp.fluid}</S.PostImg>
+            <S.PostImg fluid ={featuredImgFluid} />
             <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
             <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
         </S.PostHeader>
@@ -37,6 +38,13 @@ export const query = graphql `
         frontmatter {
             title
             description
+            img {
+                childImageSharp {
+                    fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                }
+              }
+            }
             date (locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
         }
         html
