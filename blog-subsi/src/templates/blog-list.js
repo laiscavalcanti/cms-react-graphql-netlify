@@ -67,13 +67,12 @@ export const query = graphql `
                         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
                         description
                         img {
-            childImageSharp {
-              fluid(maxHeight: 10, maxWidth: 10) {
-                base64
-              
-            }
-          }
-        }
+                            childImageSharp {
+                            fluid(maxHeight: 10, maxWidth: 10) {
+                            base64
+                                }
+                            }
+                        }
                         title
                     }
                 timeToRead

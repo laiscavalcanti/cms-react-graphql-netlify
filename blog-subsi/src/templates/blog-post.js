@@ -37,15 +37,13 @@ export const query = graphql `
     frontmatter {
       title
       description
-      img 
-        
+      img{
+          id
+        }
       date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
     }
     html
     timeToRead
   }
-}
-
-
-    `
+}`
 export default BlogPost
