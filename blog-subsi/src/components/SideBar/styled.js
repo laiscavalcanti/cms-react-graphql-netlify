@@ -28,7 +28,7 @@ export const LayoutList = styled.li`
 export const LayoutLink = styled(Link)`
   color: #000723;
   letter-spacing: 1.5px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: 'Source Sans Pro', sans-serif;
   &:hover{
     opacity: 0.5;

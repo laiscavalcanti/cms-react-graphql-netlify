@@ -5,10 +5,12 @@ export const PostItemLink = styled(Link)`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1rem;
+    margin-left: -1rem;
+  
 `
 export const PostItemWrapper = styled.section`
     display: flex;
+    width: 80%;
     align-content: flex-end;
     flex-wrap: wrap;
     min-height: 10rem;
@@ -16,7 +18,6 @@ export const PostItemWrapper = styled.section`
     color: white;
     border: none;
     background-color: lightgreen;
-    padding: 2rem 1 rem;    
 `
 /*export const PostItemImg = styled(Img)`
     display: flex;

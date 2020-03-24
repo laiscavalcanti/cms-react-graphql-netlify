@@ -5,8 +5,9 @@ export const GridWrapper = styled.section`
     border-bottom: 1px solid var(--borders);
     display: grid;
     grid-area: posts;
-    grid-gap: 1px;
-    grid-template-columns: 33.33% 33.33% 33.33%; 
+    grid-gap: 2px;
+    grid-template-columns: 40% 40%; 
+    justify-content: center;
     
 `
 export const GridList = styled.div`
