@@ -11,9 +11,7 @@ const SimpleLayout = ({children}) => (
 
 <S.LayoutWrapper>
       <GlobalStyles />
-    <S.HeaderWrapper>
         <SideBar />
-    </S.HeaderWrapper>
         <S.LayoutMain>
             <main>
               {children}

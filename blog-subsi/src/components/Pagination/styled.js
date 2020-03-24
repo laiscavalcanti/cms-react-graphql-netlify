@@ -9,7 +9,7 @@ export const PaginationWrapper = styled.section`
     padding: 1.5rem 3rem;
 
     a{
-        color: blue;
+        color: white;
         transition: color 0.5s;
         
         &:hover{

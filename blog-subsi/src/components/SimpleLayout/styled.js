@@ -6,8 +6,12 @@ export const LayoutWrapper = styled.section`
 `
 export const LayoutMain = styled.main`
   min-height: 100vh;
+  width: 100%;
+
+    grid-template-areas:
+     "posts"
+     "pagination";
+  
+ 
+  
 `
-export const HeaderWrapper = styled.div `
- width: 100%;
- display: flex;
- `

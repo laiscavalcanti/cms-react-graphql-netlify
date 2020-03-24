@@ -6,6 +6,8 @@ import PostItem from "../components/PostItem"
 import SEO from "../components/seo"
 import Pagination from '../components/Pagination'
 
+import * as S from '../components/GridWrapper/styled'
+
 const BlogList = props =>{
     const postList = props.data.allMarkdownRemark.edges
 
@@ -17,12 +19,14 @@ const BlogList = props =>{
 
     return (
         <Layout>
-        <SEO title="Subsidiário" />
+        <SEO title="Home" />
+        <S.GridWrapper>
+      
         {postList.map(({
-                      node: {
-                        frontmatter: {category, background, date, description, title, img},
-                        timeToRead,
-                        fields: {slug}
+            node: {
+                frontmatter: {category, background, date, description, title},
+                    timeToRead,
+                    fields: {slug}
                       },
                       }) => (
                         <PostItem 
@@ -31,12 +35,13 @@ const BlogList = props =>{
                         category={category}
                         date={date}
                         timeToRead={timeToRead}
-                        img={img}
                         title={title}
                         description={description}
                       />
                       )
                   )}
+       
+        </S.GridWrapper>
 
             <Pagination 
                 isFirst={isFirst} 
@@ -66,14 +71,8 @@ export const query = graphql `
                         category
                         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
                         description
-                        img {
-                            childImageSharp {
-                            fluid(maxHeight: 10, maxWidth: 10) {
-                            base64
-                                }
-                            }
-                        }
                         title
+
                     }
                 timeToRead
             }

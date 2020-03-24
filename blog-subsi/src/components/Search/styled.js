@@ -22,6 +22,9 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     color: white;
   }
+  
+    
+  
   .ais-SearchBox-input {
     background: none;
     border: none;

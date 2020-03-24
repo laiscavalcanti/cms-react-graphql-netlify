@@ -28,7 +28,7 @@ const SocialLinks = () =>(
             })}
         </S.SocialLinksList>
         <S.ProfileC>
-                © {new Date().getFullYear()},  todos os direitos reservados: subsidiário
+                © {new Date().getFullYear()},  todos os direitos reservados: lorem
                     {` `}
             </S.ProfileC>
     </S.SocialLinksWrapper>
