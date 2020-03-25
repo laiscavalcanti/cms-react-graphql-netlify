@@ -13,25 +13,30 @@ const BlogPost = ({ data, pageContext }) =>{
     const previous = pageContext.previousPost
 
     return (
-    <SimpleLayout>
-        <SEO 
-            title ={post.frontmatter.title}
-            description={post.frontmatter.description}    
-          />
-        <S.PostHeader>
-            <S.PostDate>
-                {post.frontmatter.date} 〰 {post.timeToRead} min de Leitura
-            </S.PostDate>
-            <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
-            <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
-        </S.PostHeader>
-        <S.MainContent>
-            <div dangerouslySetInnerHTML={{__html: post.html}}></div>
-        </S.MainContent>
-        <RecommendedPosts next={next} previous={previous} />
+      <SimpleLayout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description} 
+      />
+      <S.PostHeader>
+        <S.PostDate>
+          {post.frontmatter.date} • {post.timeToRead} min de leitura
+          <S.PostTag>{post.frontmatter.category}</S.PostTag>
+        </S.PostDate>
+        
+        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
+        <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
+      </S.PostHeader>
+      <S.MainContent>
+        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+      </S.MainContent>
+      <RecommendedPosts next={next} previous={previous} />
+      
     </SimpleLayout>
-    ) 
+  )
 }
+    
+
 export const query = graphql `
  query Post($slug: String!) {
   markdownRemark(fields: {slug: {eq: $slug}}) {
@@ -42,6 +47,7 @@ export const query = graphql `
       title
       description
       date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+      category
       }
       html
       timeToRead

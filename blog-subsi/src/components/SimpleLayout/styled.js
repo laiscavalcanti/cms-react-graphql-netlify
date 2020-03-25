@@ -5,7 +5,7 @@ export const LayoutWrapper = styled.section`
   flex-direction: column;
 `
 export const LayoutMain = styled.main`
-  height: 25vh;
+  min-height: 100vh;
   width: 100%;
 
     grid-template-areas:

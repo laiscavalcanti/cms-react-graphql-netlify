@@ -1,38 +1,53 @@
 import styled from 'styled-components'
 import Img from "gatsby-image"
+import { Link } from 'gatsby'
 
 export const PostHeader = styled.header`
   color: black;
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
+  padding: 6rem 5rem 0;
 `
-
+export const PostTag = styled(Link)`
+  color: #757575;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0 auto;
+  opacity: 0.3;
+`
 export const PostTitle = styled.h1`
-  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
   font-weight: 700;
-  padding: 0 1.4rem;
-  margin: 1rem auto;
+  padding: 0 0 0 6.5rem;
+  max-width: 51rem;
+  margin: 2rem auto;
 `
 export const PostImg = styled(Img)`
-  display: flex;
+
 `
 export const PostDescription = styled.h2`
-  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
   font-weight: 200;
-  padding: 0 1.4rem;
-`
+  font-style: italic;
 
+  max-width: 51rem;
+  color: #757575;
+  padding: 0 0 0 11rem;
+`
 export const PostDate = styled.p`
-  font-size: 1.1rem;
+  display: flex;
+  color: #757575;
+  font-size: 0.9rem;
   font-weight: 100;
-  padding: 0 1.4rem;
+  padding-left: 11rem;
 `
-
 export const MainContent = styled.section`
+  
   margin: auto;
-  max-width: 70rem;
-  padding: 2rem 5rem;
+  max-width: 51rem;
+  padding: 2rem 5rem 0 5.5rem;
   p,
   h1,
   h2,
@@ -43,11 +58,12 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
+    font-family: 'Monteserrat', sans-serif;
     color:black;
-    font-size: 1.25rem;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 200;
     line-height: 1.7;
-    letter-spacing: 0.069rem;
+    letter-spacing: 0.0050rem;
     padding: 0 1.4rem;
   }
   p {

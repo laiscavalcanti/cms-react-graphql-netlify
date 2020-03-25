@@ -69,7 +69,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: [ 'Playfair Display', 'EB Garamond', 'Source Sans Pro']
+          families: [ 'Montserrat', 'Courier Prime', 'PT Sans'] , 
         },
       },
     },
