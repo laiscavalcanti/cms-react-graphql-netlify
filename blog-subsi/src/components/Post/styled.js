@@ -2,11 +2,15 @@ import styled from 'styled-components'
 import Img from "gatsby-image"
 import { Link } from 'gatsby'
 
+export const PostWrapper = styled.div`
+    max-width: 50rem;
+    margin: auto;
+`
 export const PostHeader = styled.header`
-  color: black;
   margin: auto;
   max-width: 70rem;
-  padding: 6rem 5rem 0;
+  padding: 5rem 5rem 0;
+  color: black;
 `
 export const PostTag = styled(Link)`
   color: #757575;
@@ -17,11 +21,12 @@ export const PostTag = styled(Link)`
 `
 export const PostTitle = styled.h1`
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  padding: 0 0 0 6.5rem;
-  max-width: 51rem;
-  margin: 2rem auto;
+  padding: 0 1.4rem;
+  margin: 1rem auto;
+
+  
 `
 export const PostImg = styled(Img)`
 
@@ -31,23 +36,27 @@ export const PostDescription = styled.h2`
   font-size: 1.8rem;
   font-weight: 200;
   font-style: italic;
-
-  max-width: 51rem;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 0 1.4rem;
   color: #757575;
-  padding: 0 0 0 11rem;
+  
 `
 export const PostDate = styled.p`
-  display: flex;
+  
   color: #757575;
   font-size: 0.9rem;
   font-weight: 100;
-  padding-left: 11rem;
+  
 `
 export const MainContent = styled.section`
-  
-  margin: auto;
-  max-width: 51rem;
-  padding: 2rem 5rem 0 5.5rem;
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  border: solid 2px red;
+  max-width: 50rem;
+  padding: 2rem 0rem;
+  text-align: justify;
   p,
   h1,
   h2,

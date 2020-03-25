@@ -18,6 +18,7 @@ const BlogPost = ({ data, pageContext }) =>{
         title={post.frontmatter.title}
         description={post.frontmatter.description} 
       />
+      <S.PostWrapper>
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
@@ -31,7 +32,7 @@ const BlogPost = ({ data, pageContext }) =>{
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
       <RecommendedPosts next={next} previous={previous} />
-      
+      </S.PostWrapper>
     </SimpleLayout>
   )
 }

@@ -5,8 +5,8 @@ export const PostItemLink = styled(Link)`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: -1rem;
-  
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 `
 export const PostItemWrapper = styled.section`
     display: flex;
