@@ -3,59 +3,70 @@ import Img from "gatsby-image"
 import { Link } from 'gatsby'
 
 export const PostWrapper = styled.div`
-    max-width: 50rem;
-    margin: auto;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+ `
+export const PostGrid = styled.section`
+  display: block;
+  margin: 0 auto;
+  max-width: 50rem;
 `
 export const PostHeader = styled.header`
-  margin: auto;
-  max-width: 70rem;
-  padding: 5rem 5rem 0;
+  display: block;
+  padding: 4.8rem;
   color: black;
 `
 export const PostTag = styled(Link)`
+  display: flex;
+  align-items: center;
   color: #757575;
   font-size: 0.9rem;
   font-weight: 400;
-  margin: 0 auto;
-  opacity: 0.3;
+  opacity: 0.6;
 `
 export const PostTitle = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
   font-weight: 700;
   padding: 0 1.4rem;
-  margin: 1rem auto;
-
-  
+  margin: 6rem 1.5rem 2rem 1.5rem;
 `
 export const PostImg = styled(Img)`
 
 `
 export const PostDescription = styled.h2`
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 200;
   font-style: italic;
-  font-size: 2rem;
-  font-weight: 200;
-  padding: 0 1.4rem;
   color: #757575;
-  
 `
 export const PostDate = styled.p`
-  
+  display: block;
+  margin: 0 auto;
   color: #757575;
   font-size: 0.9rem;
-  font-weight: 100;
-  
+  font-weight: 100; 
 `
-export const MainContent = styled.section`
+export const IconWrapper = styled.div `
   display: flex;
-  align-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
-  border: solid 2px red;
+`
+export const Icon = styled.div`
+  margin: 0.5rem;
+  width: 20px;
+  height:20px;
+  color: #757575;
+  opacity: 0.6;
+`
+export const MainContent = styled.article`
+  display:block;
+  margin: 0 auto;
   max-width: 50rem;
-  padding: 2rem 0rem;
+  padding: 1rem 4rem 4rem 1rem ;
   text-align: justify;
   p,
   h1,

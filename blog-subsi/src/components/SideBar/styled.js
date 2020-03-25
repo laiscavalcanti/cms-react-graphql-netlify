@@ -13,12 +13,10 @@ export const LayoutNav = styled.nav`
   flex-wrap: wrap;
   background-color: #fff8dc;
   box-shadow: 1px 12px 5px -10px rgba(0,0,0,0.15);
-
 `
-
 export const LayoutList = styled.li`
-    padding: 0px 1.5rem;
-    margin: 0.5rem;
+  padding: 0px 1.5rem;
+  margin: 0.5rem;
     .active{
       color: #bc8f8f;
     }

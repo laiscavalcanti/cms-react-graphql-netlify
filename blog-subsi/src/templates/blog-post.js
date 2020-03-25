@@ -5,6 +5,7 @@ import SimpleLayout from "../components/SimpleLayout"
 import SEO from "../components/seo"
 import RecommendedPosts from '../components/RecommendedPosts'
 
+import { Tag } from '@styled-icons/boxicons-regular/Tag'
 import * as S from '../components/Post/styled'
 
 const BlogPost = ({ data, pageContext }) =>{
@@ -19,10 +20,11 @@ const BlogPost = ({ data, pageContext }) =>{
         description={post.frontmatter.description} 
       />
       <S.PostWrapper>
+        <S.PostGrid>
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
-          <S.PostTag>{post.frontmatter.category}</S.PostTag>
+          
         </S.PostDate>
         
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
@@ -31,7 +33,18 @@ const BlogPost = ({ data, pageContext }) =>{
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
+
+        <S.IconWrapper>
+          <S.Icon>
+              <Tag />
+          </S.Icon>
+          <S.PostTag>
+          {post.frontmatter.category}
+        </S.PostTag>
+        </S.IconWrapper>
+        
       <RecommendedPosts next={next} previous={previous} />
+      </S.PostGrid>
       </S.PostWrapper>
     </SimpleLayout>
   )

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const PostItem = ({slug, category, background, date, timeToRead, description, title, image}) => (
+const PostItem = ({slug, category, background, date, timeToRead, description, title,}) => (
         <S.PostItemLink to ={slug}>
             <S.PostItemWrapper>
                     <S.PostItemTitle>{title}</S.PostItemTitle>
                     <S.PostItemDescription>{description}</S.PostItemDescription>
+                    
                     
             </S.PostItemWrapper>
         </S.PostItemLink>
