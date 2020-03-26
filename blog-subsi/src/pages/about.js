@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import SimpleLayout from "../components/SimpleLayout"
 import SEO from "../components/seo"
 
@@ -11,6 +11,6 @@ const AboutPage = () =>(
             <p>llllllllllllllllll</p>
         </section>
     </SimpleLayout>
-) 
+)
 
 export default AboutPage

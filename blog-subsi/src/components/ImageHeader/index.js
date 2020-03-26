@@ -18,6 +18,6 @@ const ImageHeader = () => {
     `
     )
     return <S.ImgWrapperHeader fluid={avatarImage.childImageSharp.fluid} />
-} 
+}
 
 export default ImageHeader

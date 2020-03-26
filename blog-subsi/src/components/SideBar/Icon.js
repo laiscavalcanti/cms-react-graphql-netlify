@@ -6,7 +6,7 @@ const Icon = () => (
     <IconSearch>
          <Search />
     </IconSearch>
-       
+
 )
 export const IconSearch = styled.button`
     display: flex;

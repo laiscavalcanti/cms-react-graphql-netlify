@@ -25,6 +25,6 @@ const SearchPage = () =>(
         }}}/>
         <Hits hitComponent={ Hit } />
       </InstantSearch>
-    </S.SearchWrapper> 
+    </S.SearchWrapper>
 )
 export default SearchPage

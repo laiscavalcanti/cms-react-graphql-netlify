@@ -2,14 +2,14 @@ import React from 'react'
 import propTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import * as S from './styled' 
+import * as S from './styled'
 
 const Pagination = ({
     isFirst,
     isLast,
     currentPage,
     numPages,
-    prevPage, 
+    prevPage,
     nextPage
     }) => (
     <S.PaginationWrapper>
@@ -28,8 +28,8 @@ Pagination.propTypes = {
     isLast: propTypes.bool.isRequired,
     currentPage: propTypes.number.isRequired,
     numPages: propTypes.number.isRequired,
-    prevPage: propTypes.string, 
-    nextPage: propTypes.string,  
+    prevPage: propTypes.string,
+    nextPage: propTypes.string,
 }
 
 export default Pagination
