@@ -1,6 +1,6 @@
-const path = require(`path`);
-require('dotenv').config()
-const queries = require('./src/utils/algolia_queries.js')
+const path = require(`path`)
+require("dotenv").config()
+const queries = require("./src/utils/algolia_queries.js")
 
 module.exports = {
   siteMetadata: {
@@ -9,12 +9,10 @@ module.exports = {
     description: `lorem loremlorem loremlorem lorem`,
     author: `@laiscavalcanti`,
   },
-    
+
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     // needs to be the first to work with gatsby-remark-images
     {
       resolve: `gatsby-source-filesystem`,
@@ -42,12 +40,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              name: "uploads",
-            },
-          },
-          {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 960,
@@ -58,18 +50,13 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: [ 'Montserrat', 'Courier Prime', 'PT Sans'] , 
+          families: ["Montserrat", "Courier Prime", "PT Sans"],
         },
       },
     },
@@ -78,9 +65,9 @@ module.exports = {
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, 
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries,
-        chunkSize: 10000, 
+        chunkSize: 10000,
         enablePartialUpdates: true,
       },
     },

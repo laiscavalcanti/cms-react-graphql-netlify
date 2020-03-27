@@ -18,7 +18,7 @@ const Profile = () => {
           }
         }
       }
-    `) 
+    `)
     return (
           <S.ProfileContainer>
             <S.ProfileWrapper>

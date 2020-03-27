@@ -17,5 +17,5 @@ const MenuBar = () =>(
         </S.MenuBarList>
     </S.MenuBarWrapper>
 )
-    
+
 export default MenuBar

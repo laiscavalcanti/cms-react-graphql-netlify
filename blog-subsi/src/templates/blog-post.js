@@ -17,7 +17,7 @@ const BlogPost = ({ data, pageContext }) =>{
       <SimpleLayout>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description} 
+        description={post.frontmatter.description}
       />
       <S.PostWrapper>
         <S.PostGrid>
@@ -26,7 +26,7 @@ const BlogPost = ({ data, pageContext }) =>{
           {post.frontmatter.date} • {post.timeToRead} min de leitura
           
         </S.PostDate>
-        
+
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
       </S.PostHeader>
@@ -49,7 +49,7 @@ const BlogPost = ({ data, pageContext }) =>{
     </SimpleLayout>
   )
 }
-    
+
 
 export const query = graphql `
  query Post($slug: String!) {
