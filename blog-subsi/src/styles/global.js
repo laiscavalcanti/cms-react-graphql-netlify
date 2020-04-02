@@ -14,11 +14,11 @@ const GlobalStyles = createGlobalStyle `
 
 body{
     font-size: 100%;
-    background-color: #fff8dc;
-    background: whitesomke;
+    background-color: black;
+    background: white;
     line-height: 1;
     font-size: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gotu', sans-serif;
 }
 
   img {

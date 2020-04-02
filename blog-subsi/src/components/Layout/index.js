@@ -9,9 +9,9 @@ import * as S from './styled'
 
 const Layout = ({children}) => (
     <>
+    <GlobalStyles />
     <S.LayoutWrapper>
-      <GlobalStyles />
-          <Header />
+        <Header />
           <S.LayoutMain>
             <main>
               {children}

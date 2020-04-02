@@ -5,5 +5,6 @@ export const LayoutWrapper = styled.section`
   flex-direction: column;
 `
 export const LayoutMain = styled.main`
+  position: relative;
   min-height: 100vh;
 `

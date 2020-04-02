@@ -5,10 +5,6 @@ import * as S from "./styled"
 
 const PostItem = ({
   slug,
-  category,
-  background,
-  date,
-  timeToRead,
   description,
   title,
   image,

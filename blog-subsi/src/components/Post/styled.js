@@ -7,6 +7,7 @@ export const PostWrapper = styled.div`
   max-width: 1080px;
   padding-left: 2.6rem;
   padding-right: 2.6rem;
+  width: 100%;
  `
 export const PostGrid = styled.section`
   display: block;
@@ -27,33 +28,34 @@ export const PostTag = styled(Link)`
   opacity: 0.6;
 `
 export const PostTitle = styled.h1`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
+  font-family: 'Gotu', sans-serif;
+  font-size: 3rem;
   font-weight: 700;
-  padding: 0 1.4rem;
-  margin: 6rem 1.5rem 2rem 1.5rem;
+  margin: 3rem 1rem 1rem 1rem;
 `
 export const PostImg = styled(Img)`
 
 `
 export const PostDescription = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.7rem;
+  margin: 1rem;
+  font-family: 'Gotu', sans-serif;
+  font-size: 1.5rem;
   font-weight: 200;
   font-style: italic;
   color: #757575;
 `
 export const PostDate = styled.p`
-  display: block;
-  margin: 0 auto;
   color: #757575;
   font-size: 0.9rem;
   font-weight: 100; 
+  padding-left: 1.5rem;
+  margin: 0.5rem;
 `
 export const IconWrapper = styled.div `
   display: flex;
   justify-content: flex-start;
-  margin: 0 auto;
+  max-width: 50rem;
+  padding-left: 5rem;
 `
 export const Icon = styled.div`
   margin: 0.5rem;
@@ -63,10 +65,8 @@ export const Icon = styled.div`
   opacity: 0.6;
 `
 export const MainContent = styled.article`
-  display:block;
-  margin: 0 auto;
   max-width: 50rem;
-  padding: 1rem 4rem 4rem 1rem ;
+  padding-left: 5rem;
   text-align: justify;
   p,
   h1,

@@ -20,7 +20,7 @@ const BlogPost = ({ data, pageContext }) =>{
         description={post.frontmatter.description}
       />
       <S.PostWrapper>
-        <S.PostGrid>
+
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
@@ -44,7 +44,7 @@ const BlogPost = ({ data, pageContext }) =>{
         </S.IconWrapper>
         
       <RecommendedPosts next={next} previous={previous} />
-      </S.PostGrid>
+
       </S.PostWrapper>
     </SimpleLayout>
   )

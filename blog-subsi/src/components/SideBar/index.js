@@ -2,11 +2,11 @@ import React from "react"
 
 import links from './content'
 import * as S from './styled'
-import Logo from "../Logo"
+//import Logo from "../Logo"
 
 const SideBar = () =>(
     <S.LayoutNav>
-      <Logo />
+   
         {links.map((link, i)=>(
           <S.LayoutList key={i}>
             <S.LayoutLink to={link.url} activeClassName="active">

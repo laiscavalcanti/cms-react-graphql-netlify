@@ -56,7 +56,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Montserrat", "Courier Prime", "PT Sans"],
+          families: ["Montserrat", "Gotu"],
         },
       },
     },
