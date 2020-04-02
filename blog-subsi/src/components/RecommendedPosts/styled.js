@@ -5,7 +5,6 @@ export const RecommendedWrapper = styled.section `
     display: flex;
     border-top: 1px solid yellow;
     border-bottom: 1px solid yellow;
-   
 `
 export const RecommendedLink = styled(Link) `
   align-items: center;

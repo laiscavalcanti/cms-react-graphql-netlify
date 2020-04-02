@@ -8,6 +8,7 @@ export const PaginationWrapper = styled.section`
   padding: 1.5rem 2rem;
   background-color: tomato;
   justify-content: space-between;
+  align-content: flex-end;
   
     a{
         color: white;

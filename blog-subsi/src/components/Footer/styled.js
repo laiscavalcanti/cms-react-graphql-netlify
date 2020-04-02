@@ -5,7 +5,6 @@ export const FooterWrapper = styled.footer`
     width: 100%;
     bottom: 0;
     right: 0;
-    
     height: 12rem;
     &:hover{
     opacity: 0.5;

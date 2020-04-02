@@ -9,6 +9,7 @@ const PostItem = ({
   title,
   image,
 }) => (
+  <S.PostWrapper>
   <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
       <S.PostItemImg fluid={image} />
@@ -16,6 +17,7 @@ const PostItem = ({
       <S.PostItemDescription>{description}</S.PostItemDescription>
     </S.PostItemWrapper>
   </S.PostItemLink>
+  </S.PostWrapper>
 )
 
 PostItem.propTypes = {
@@ -26,7 +28,7 @@ PostItem.propTypes = {
   timeToRead: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  image: PropTypes.object,
+  image: PropTypes.object.isRequired,
 }
 
 export default PostItem

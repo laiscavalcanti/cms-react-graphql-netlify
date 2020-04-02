@@ -7,7 +7,7 @@ export const SocialLinksWrapper = styled.div `
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    background-color: #ffe4c4;
+    background-color: white;
     &:hover{
     opacity: 0.5;
     transition: opacity 0.1s, transform 0.3s;
@@ -26,12 +26,12 @@ export const SocialLinksItem = styled.li `
     padding-right: 2rem;
 `
 export const SocialLinksLink = styled.a`
-    color: #000723;
+    color: black;
     transition: color 0.5s;
     &:hover{
         opacity: 0.5;
         transition: opacity 0.3s, transform 0.3s;
-        background: #fff8dc;
+        background: white;
     }
 `
 export const IconWrapper = styled.div `

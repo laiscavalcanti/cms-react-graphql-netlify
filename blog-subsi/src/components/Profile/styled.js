@@ -8,7 +8,7 @@ export const ProfileContainer = styled.div`
     height: 12rem;
     flex-direction: column;
     align-content: flex-start;
-    background-color: #BC8F8F;
+    background-color: white;
 `
 export const ProfileWrapper = styled.section`
     margin:1rem;
@@ -32,7 +32,7 @@ export const ProfilePosition = styled.small`
    font-weight:600;
    padding-top: 2rem;
    font-size: 1.5rem;
-   color: #000723;   
+   color: black;   
 `
 export const ProfileDescription = styled.p `
     font-family: 'Source Sans Pro', sans-serif;

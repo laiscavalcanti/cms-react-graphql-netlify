@@ -6,7 +6,7 @@ import PostItem from "../components/PostItem"
 import SEO from "../components/seo"
 import Pagination from "../components/Pagination"
 
-//import * as S from "../components/GridWrapper/styled"
+import * as S from "../components/GridWrapper/styled"
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
@@ -19,8 +19,8 @@ const BlogList = props => {
 
   return (
     <Layout>
-      <SEO title="Home" />
- 
+      <S.GridWrapper>
+      <SEO title="Blog" />
         {postList.map(
           ({
             node: {
@@ -38,6 +38,7 @@ const BlogList = props => {
               fields: { slug },
             },
           }) => (
+            
             <PostItem
               slug={slug}
               background={background}
@@ -48,9 +49,10 @@ const BlogList = props => {
               description={description}
               image={fluid}
             />
+            
           )
         )}
-  
+        </S.GridWrapper>
 
       <Pagination
         isFirst={isFirst}
