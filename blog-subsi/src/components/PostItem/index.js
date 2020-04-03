@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import * as S from "./styled"
+import Category from "../Category"
 
 const PostItem = ({
   slug,
@@ -15,6 +16,7 @@ const PostItem = ({
       <S.PostItemImg fluid={image} />
       <S.PostItemTitle>{title}</S.PostItemTitle>
       <S.PostItemDescription>{description}</S.PostItemDescription>
+      <Category category={category} />
     </S.PostItemWrapper>
   </S.PostItemLink>
   </S.PostWrapper>
@@ -22,7 +24,7 @@ const PostItem = ({
 
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
-  category: PropTypes.isRequired,
+  category: PropTypes.array,
   background: PropTypes.string,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.string.isRequired,
