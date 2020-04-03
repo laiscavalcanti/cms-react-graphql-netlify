@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import { Tag } from 'styled-icons/boxicons-regular/Tag'
-
-import * as V from 'styles/variables'
+//import { Tag } from 'styled-icons/boxicons-regular/Tag'
 
 export const Tags = styled.div`
   align-items: center;
@@ -48,8 +46,8 @@ export const TagItem = styled.span`
   vertical-align: top;
 `
 
-export const TagIcon = styled(Tag)`
+/*export const TagIcon = styled.div`
   display: block;
   margin-right: 1rem;
   width:20rem;
-`
+`*/

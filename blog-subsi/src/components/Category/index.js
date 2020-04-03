@@ -1,37 +1,35 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReactGA from 'react-ga'
+
 import {Link} from 'gatsby'
-
-
 
 import * as S from './styled'
 
 const trackClick = (item) => {
   ReactGA.event({
-    category: 'Category',
+    category: 'Tag',
     action: 'click',
-    label: `Category - ${item}`
+    label: `Tag - ${item}`
   })
 }
 
-const Category = ({ categories, isLink }) => {
+const Category = ({ tags, isLink }) => {
   return (
     <S.Tags>
-      <S.TagIcon />
-      {categories.map((category, i) => (
+ 
+      {tags.map((tag, i) => (
         <S.TagHolder key={i}>
           { isLink ? (
             <Link 
-              to={`blog?query=` + category}
+              to={`blog?query=` + tag}
               cover
               direction="down"
               duration={1}
-              onClick={() => trackClick(category)}
-              >
-                <S.TagItem>{category}</S.TagItem>
+              onClick={() => trackClick(tag)}>
+                <S.TagItem>{tag}</S.TagItem>
             </Link>
-            ) : (<S.TagItem>{category}</S.TagItem>)
+            ) : (<S.TagItem>{tag}</S.TagItem>)
           }
         </S.TagHolder>
       ))}
@@ -40,7 +38,7 @@ const Category = ({ categories, isLink }) => {
 }
 
 Category.propTypes = {
-  categories: PropTypes.node.isRequired,
+  tags: PropTypes.node.isRequired,
   isLink: PropTypes.bool
 }
 

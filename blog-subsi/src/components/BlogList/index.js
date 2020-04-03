@@ -28,7 +28,7 @@ const listQuery = graphql`
           }
           frontmatter {
             background
-            category
+            tags
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
             title
@@ -59,7 +59,7 @@ const BlogList = () => {
           ({
             node: {
               frontmatter: {
-                category,
+                tags,
                 background,
                 date,
                 description,
@@ -76,7 +76,7 @@ const BlogList = () => {
             <PostItem
               slug={slug}
               background={background}
-              category={category}
+              tags={tags}
               date={date}
               timeToRead={timeToRead}
               title={title}

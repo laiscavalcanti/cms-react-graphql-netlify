@@ -39,7 +39,7 @@ const BlogPost = ({ data, pageContext }) =>{
               <Tag />
           </S.Icon>
           <S.PostTag>
-          {post.frontmatter.category}
+          {post.frontmatter.tags}
         </S.PostTag>
         </S.IconWrapper>
         
@@ -61,7 +61,7 @@ export const query = graphql `
       title
       description
       date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-      category
+      tags
       }
       html
       timeToRead
