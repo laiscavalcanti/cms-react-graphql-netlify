@@ -37,8 +37,7 @@ const BlogList = props => {
               timeToRead,
               fields: { slug },
             },
-          }) => (
-            
+          }) => (           
             <PostItem
               slug={slug}
               background={background}
@@ -49,7 +48,6 @@ const BlogList = props => {
               description={description}
               image={fluid}
             />
-            
           )
         )}
         </S.GridWrapper>
@@ -80,7 +78,6 @@ export const query = graphql`
           frontmatter {
             background
             tags
-            
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
             title

@@ -20,20 +20,16 @@ const BlogPost = ({ data, pageContext }) =>{
         description={post.frontmatter.description}
       />
       <S.PostWrapper>
-
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
-          
         </S.PostDate>
-
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
       </S.PostHeader>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>
-
         <S.IconWrapper>
           <S.Icon>
               <Tag />
@@ -62,6 +58,13 @@ export const query = graphql `
       description
       date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
       tags
+      image{
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                }
+              }
+            }
       }
       html
       timeToRead

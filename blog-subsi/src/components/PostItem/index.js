@@ -36,11 +36,10 @@ const PostItem = ({
       <S.PostItemImg fluid={image} />
       <S.PostItemTitle>{title}</S.PostItemTitle>
       <S.PostItemDescription>{description}</S.PostItemDescription>
-      {tags &&(
-        <Category tags={tags} />)}
     </S.PostItemWrapper>
   </S.PostItemLink>
-
+  {tags &&(
+        <Category tags={tags} />)}
   </S.PostWrapper>
   
 )
