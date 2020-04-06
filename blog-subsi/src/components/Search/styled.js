@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
+
 export const SearchWrapper = styled.section`
-  background: #16202c;
+  background: tomato;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -15,36 +16,42 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.5rem 3rem;
+   
   }
   .ais-SearchBox {
     padding-top: 6rem;
+    
+    
   }
   .ais-Stats {
-    color: white;
+    color: var(--texts);
   }
-  
-  .ais-Hits-list {
-      background-color: var(--borders);
-      border-bottom: 1px solid var(--borders);
-      border-top: 1px solid var(--borders);
+  body#grid & {
+    .ais-Hits-list {
+      background-color: orange;
+      border-bottom: 1px solid orange;
+      border-top: 1px solid white;
       display: grid;
       grid-area: card;
       grid-gap: 1px;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       margin-top: 2rem;
     }
-  
+    .ais-Hits-item {
+      background-color: lightgreen;
+    }
+  }
   .ais-SearchBox-input {
     background: none;
     border: none;
-    border-bottom: 1px solid red;
-    color: red;
+    border-bottom: 1px solid pink;
+    color: blue;
     display: flex;
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 100%;
     &::placeholder {
-      color: red;
+      color: lightgrey;
     }
   }
   .ais-SearchBox-submit,

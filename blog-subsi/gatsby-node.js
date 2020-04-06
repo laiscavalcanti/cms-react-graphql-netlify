@@ -9,14 +9,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: "pages",
+      basePath: `blog`,
     })
-
-    // Creates new query'able field with name of 'slug'
     createNodeField({
       node,
-      name: "slug",
-      value: `/${slug.slice(12)}`,
+      name: `slug`,
+      value: `blog/${slug.slice(12)}`,
     })
   }
 }
@@ -38,11 +36,8 @@ exports.createPages = ({graphql, actions}) =>{
             description
             title
           }
-          
            timeToRead
           }
-          
-        
         next {
           frontmatter {
             title

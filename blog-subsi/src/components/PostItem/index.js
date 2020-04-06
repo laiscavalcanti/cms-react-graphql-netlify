@@ -14,7 +14,6 @@ const trackClick = ({ item, label }) => {
   })
 }
 
-
 const PostItem = ({
   slug,
   description,
@@ -23,26 +22,26 @@ const PostItem = ({
   tags
 }) => {
   return (
-    <S.PostWrapper
+  <S.PostWrapper >
+    <BoxHandler>
+    <S.PostItemLink
       to={`/${slug}`}
       cover
       direction="down"
-      duration={1}
+      duration={0.5}
       title={title}
       onClick={() => trackClick(title)}>
-
-  <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
       <S.PostItemImg fluid={image} />
       <S.PostItemTitle>{title}</S.PostItemTitle>
       <S.PostItemDescription>{description}</S.PostItemDescription>
     </S.PostItemWrapper>
-  </S.PostItemLink>
-  {tags &&(
+    {tags &&(
         <Category tags={tags} />)}
+    </S.PostItemLink>
+    </BoxHandler>
   </S.PostWrapper>
-  
-)
+  )
 }
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,

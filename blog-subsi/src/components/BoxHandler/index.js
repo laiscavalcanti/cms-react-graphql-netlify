@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
+import * as S from './styled'
 
 const BoxHandler = ({ children }) => {
   return (
-    {children}
+    <S.BoxHandler>{children}</S.BoxHandler>
   )
 }
 
